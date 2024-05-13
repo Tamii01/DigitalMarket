@@ -2,6 +2,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 	handleBusqueda();
+	mostrarBotonUsuario();
 });
 
 function handleBusqueda() {
@@ -38,4 +39,10 @@ function handleBusqueda() {
 		// * Hacer una request al backend
 		// * Redireccionar a /search?term donde se muestren todos los productos que cumplan con la regex
 	});
+}
+
+function mostrarBotonUsuario(){
+	// TODO:
+	// * Chequear si es admin
+	// * Mostrar u ocultar el boton de usuario en la navbar
 }
