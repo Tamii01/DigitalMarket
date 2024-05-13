@@ -39,23 +39,21 @@
       <div>
         <ul>
           <li id="listBusquedaNav">
-            <i class="fas fa-arrow-alt-circle-right"></i>
-            <input
-              type="text"
-              name="busquedaNav"
-              id="busquedaNav"
-              placeholder="Buscar..."
-              maxlength="20"
-              minlength="3"
-            />
-            <label for="busquedaNav"><i class="fas fa-search"></i></label>
+            <form method="post">
+              <button type="submit">
+                <i class="fas fa-arrow-alt-circle-right"></i>
+              </button>
+              <input
+                type="text"
+                name="busquedaNav"
+                id="busquedaNav"
+                placeholder="Buscar..."
+                maxlength="20"
+                minlength="3"
+              />
+              <label for="busquedaNav"><i class="fas fa-search"></i></label>
+            </form>
           </li>
-          <!-- TODO:
-            ! Al apretar en busqueda:
-            * esconder boton "mas", "carrito", "admin"
-            * mover el icono a la derecha del todo
-            * mostrar un input text a la izquierda del icono
-          -->
           <li><i class="fas fa-shopping-cart"></i></li>
           <!-- TODO:
             ! Al apretar en carrito:

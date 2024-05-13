@@ -60,14 +60,25 @@ nav div ul li i {
 	display: none;
 }
 
-#listBusquedaNav > i {
+#listBusquedaNav label {
+	cursor: pointer;
+}
+
+#listBusquedaNav button {
+	width: 24px;
+	height: 24px;
+	cursor: pointer;
 	position: absolute;
-	right: 5px;
-	top: 3px;
+	right: 10px;
+	top: 2px;
+	background: none;
+	border: none;
+	display: none;
+}
+
+#listBusquedaNav button i {
 	margin: 0;
 	background-color: #000;
 	border: 1px solid #000;
 	border-radius: 15px;
-	display: none;
-	cursor: pointer;
 }
