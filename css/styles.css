@@ -1,0 +1,108 @@
+/* Google Fonts - Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background-color: rgb(0, 0, 0) !important;
+}
+/* 
+#bannerprincipal{
+  width: 40px;
+} */
+
+.carousel-nav {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+
+.nav-item {
+  display: flex;
+  align-items: center;
+}
+
+.btn btn-primary prev-btn{
+  position: absolute;
+  top: 600px;
+}
+
+.btn btn-primary next-btn{
+  bottom: 600px;
+}
+
+.img-cel {
+  position: relative;
+  right: 10px;
+}
+
+#products,
+#ofertas {
+  text-align: center;
+  color: white;
+  font-size: 50px !important;
+  font-family: 'Poppins', sans-serif;
+}
+
+#products {
+  position: relative;
+  bottom: 20px;
+}
+
+.carrusel {
+  position: relative;
+  top: 60px;
+  left: 60px;
+}
+
+#ofertas {
+  position: relative;
+  bottom: 20px;
+}
+
+.carrusel2 {
+  position: relative;
+  bottom: 260px;
+}
+
+#bannerpromos {
+  position: relative;
+  top: 80px;
+}
+
+.bannerpromo1 {
+  position: relative;
+  left: 6%;
+  width: 33%;
+}
+
+.bannerpromo2 {
+  position: relative;
+  left: 60%;
+  bottom: 382px;
+  width: 33%;
+}
+
+.precio{
+  text-align: center;
+  font-size: 30px;
+  font-weight: 890;
+}
+.card-link{
+  align-items: center;
+}
+
+@media screen and (max-width: 768px) {
+  .slide-content {
+    margin: 0 10px;
+  }
+
+  .swiper-navBtn {
+    display: none;
+  }
+}
