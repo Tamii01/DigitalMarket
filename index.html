@@ -22,13 +22,13 @@
     <main>
         <!-- banner principal -->
         <section id="bannerprincipal">
-            <img src="images/banner principal.png" alt="tecnologiaparatuvida">
+            <img src="images/banner principal.png" alt="tecnologiaparatuvida" style="width: 100%;">
         </section>
 
         <!-- carrusel con cards  -->
+        <h5 id="products">PRODUCTOS DESTACADOS</h5>
         <section class="carrusel">
-            <h5 id="products">PRODUCTOS DESTACADOS</h5>
-            <div class="owl-carousel owl-theme">
+            <div class="owl-carousel owl-theme" style="left: 30px;">
 
                 <div class="sec1">
                     <div class="card" style="width: 18rem;">
@@ -42,6 +42,7 @@
                         <div class="card-body">
                             <a href="#" class="card-link">Comprar</a>
                             <a href="#" class="card-link">Ver más</a>
+                            <a href="#" class="carrito"> <img src="images/carrito.png" alt="Icono de carrito"></a>
                         </div>
                     </div>
                 </div>
@@ -58,6 +59,7 @@
                         <div class="card-body">
                             <a href="#" class="card-link">Comprar</a>
                             <a href="#" class="card-link">Ver más</a>
+                            <a href="#" class="carrito"> <img src="images/carrito.png" alt="Icono de carrito"></a>
                         </div>
                     </div>
                 </div>
@@ -74,21 +76,12 @@
                         <div class="card-body">
                             <a href="#" class="card-link">Comprar</a>
                             <a href="#" class="card-link">Ver más</a>
+                            <a href="#" class="carrito"> <img src="images/carrito.png" alt="Icono de carrito"></a>
                         </div>
                     </div>
                 </div>
+            </div>
 
-            </div>
-            <div class="carousel-nav">
-                <!-- Flecha de navegación izquierda -->
-                <div class="nav-item">
-                    <button class="btn btn-primary prev-btn"></button>
-                </div>
-                <!-- Flecha de navegación derecha -->
-                <div class="nav-item">
-                    <button class="btn btn-primary next-btn"></button>
-                </div>
-            </div>
         </section>
 
         <!-- banner promos -->
@@ -101,84 +94,90 @@
             </div>
         </section>
 
+        <hr class="linea1">
+
         <!-- segundo carrusel con cards -->
 
+        <h5 id="ofertas">OFERTAS PREMIUM</h5>
         <section class="carrusel2">
-            <h5 id="ofertas">OFERTAS PREMIUM</h5>
-            <div class="owl-carousel owl-theme" style="left: 30px;">
+            <div class="owl-carousel owl-theme">
                 <div class="sec1">
-                    <!-- Coloca aquí los elementos del primer conjunto -->
                     <div class="card" style="width: 18rem;">
                         <img src="images/a02.png" class="img-cel" alt="..." style="width: 250px; left: 18px; top: 6px;">
                         <div class="card-body">
                             <h5 class="card-title">Galaxy A02</h5>
                         </div>
                         <ul class="list-group list-group-flush">
-                            <li class="list-group-item">$399.999</li>
+                            <li class="precio">$399.999</li>
                         </ul>
                         <div class="card-body">
                             <a href="#" class="card-link">Comprar</a>
                             <a href="#" class="card-link">Ver más</a>
+                            <a href="#" class="carrito"> <img src="images/carrito.png" alt="Icono de carrito"></a>
                         </div>
                     </div>
-                    <!-- Añade más elementos si es necesario -->
                 </div>
 
                 <div class="sec2">
-                    <!-- Coloca aquí los elementos del segundo conjunto -->
                     <div class="card" style="width: 18rem;">
                         <img src="images/a52.png" class="img-cel" alt="..." style="width: 250px; left: 18px; top: 6px;">
                         <div class="card-body">
                             <h5 class="card-title">Galaxy A24</h5>
                         </div>
-                        <ul class="list-group list-group-flush"></ul>
+                        <ul class="list-group list-group-flush">
+                            <li class="precio">$399.999</li>
+                        </ul>
                         <div class="card-body">
                             <a href="#" class="card-link">Comprar</a>
                             <a href="#" class="card-link">Ver más</a>
+                            <a href="#" class="carrito"> <img src="images/carrito.png" alt="Icono de carrito"></a>
                         </div>
                     </div>
-                    <!-- Añade más elementos si es necesario -->
                 </div>
 
                 <div class="sec3">
-                    <!-- Coloca aquí los elementos del tercer conjunto -->
                     <div class="card" style="width: 18rem;">
                         <img src="images/S22.png" class="img-cel" alt="..." style="width: 250px; left: 18px; top: 6px;">
                         <div class="card-body">
                             <h5 class="card-title">Galaxy S22</h5>
                         </div>
-                        <ul class="list-group list-group-flush"></ul>
+                        <ul class="list-group list-group-flush">
+                            <li class="precio">$399.999</li>
+                        </ul>
                         <div class="card-body">
                             <a href="#" class="card-link">Comprar</a>
                             <a href="#" class="card-link">Ver más</a>
+                            <a href="#" class="carrito"> <img src="images/carrito.png" alt="Icono de carrito"></a>
                         </div>
                     </div>
-                    <!-- Añade más elementos si es necesario -->
+
                 </div>
 
-                <!-- Agrega más bloques "sec#" según sea necesario -->
+            </div>
 
+            <!-- Flecha de navegación izquierda -->
+            <div class="prev-btn">
+                <img src="images/flechaIzq.png" alt="Anterior">
             </div>
-            <div class="carousel-nav">
-                <!-- Flecha de navegación izquierda -->
-                <div class="nav-item">
-                    <button class="btn btn-primary prev-btn"></button>
-                </div>
-                <!-- Flecha de navegación derecha -->
-                <div class="nav-item">
-                    <button class="btn btn-primary next-btn"></button>
-                </div>
+
+            <!-- Flecha de navegación derecha -->
+            <div class="next-btn">
+                <img src="images/flechaDer.png" alt="Siguiente">
             </div>
+
         </section>
 
         <!-- video -->
         <section id="video">
-            <h1>Descubrí el nuevo Galaxy</h1>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/ZUuAjEEJoWM?si=4CL-9wmZfzRK9e-K"
-                title="YouTube video player" frameborder="0"
+            <h1 id="galaxy">Descubrí el nuevo Galaxy</h1>
+            <iframe id="vidsam" width="1260" height="515"
+                src="https://www.youtube.com/embed/ZUuAjEEJoWM?si=4CL-9wmZfzRK9e-K" title="YouTube video player"
+                frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                 referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         </section>
+
+        <hr class="linea2">
 
     </main>
 
@@ -193,7 +192,7 @@
             <a href="https://wa.link/0r3gmg" target="whatsapp">Whastapp +543417470919</a>
         </div>
 
-        Formulario de suscripción
+        <!-- Formulario de suscripción -->
         <div class="suscripcion">
             <h3>Recibí ofertas y promociones</h3>
             <form action="#" method="get">
@@ -256,7 +255,7 @@
                 margin: 10, // Espacio entre los elementos
                 nav: false, // Flechas de navegación (serán botones personalizados)
                 autoplay: true, // Reproducción automática
-                autoplayTimeout: 2100, // Tiempo de espera entre cada cambio (en milisegundos)
+                autoplayTimeout: 2800, // Tiempo de espera entre cada cambio (en milisegundos)
                 slideTransition: 'linear', // Transición suave
                 responsive: {
                     0: {
@@ -266,7 +265,7 @@
                         items: 3 // Muestra 3 elementos en pantallas medianas
                     },
                     1000: {
-                        items: 5 // Muestra 5 elementos en pantallas grandes
+                        items: 4 // Muestra 4 elementos en pantallas grandes
                     }
                 }
             });
