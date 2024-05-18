@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DigitalMarket</title>
+    <link rel="icon" href="./static/img/logo dm favicon2.png">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+<body>
+    <header>
+        <nav></nav>
+    </header>
+    <main>
+        <!-- banner principal -->
+        <div class="bannersamsung">
+            <img src="./static/img/banner samsung.png" alt="samsung">
+        </div>
+
+
+        <!-- filtro -->
+        <div class="contenedor-principal">
+        <div class="seccion-filtro">
+            <h2>Filtrar</h2>
+            <form id="formulario-filtro">
+                <div class="grupo-formulario">
+                    <label for="categoria">Categoría:</label>
+                    <select id="categoria" name="category">
+                        <option value="all">Todas</option>
+                        <option value="electronics">Smartphone</option>
+                        <option value="fashion">SmartWatch</option>
+                        <option value="home">Tv</option>
+                    </select>
+                </div>
+                <div class="grupo-formulario">
+                    <label for="rango-precio">Precio:</label>
+                    <div class="contenedor-rango-precio">
+                        <output id="precio-min">Desde: $30</output>
+                        <input type="range" id="rango-precio" name="price-range" min="0" max="1000" step="50" value="500">
+                        <output id="precio-max">Hasta: $1000</output>
+                    </div>
+                </div>
+                <div class="grupo-formulario">
+                    <label>Modelo:</label>
+                    <div class="grupo-checkbox">
+                        <label>
+                            <input type="checkbox" name="rating" value="5"> S23
+                        </label>
+                        <label>
+                            <input type="checkbox" name="rating" value="4"> A54
+                        </label>
+                        <label>
+                            <input type="checkbox" name="rating" value="3"> A04e
+                        </label>
+                        <label>
+                            <input type="checkbox" name="rating" value="2"> Flip 5
+                        </label>
+                        <label>
+                            <input type="checkbox" name="rating" value="1"> A14
+                        </label>
+                    </div>
+                </div>
+                <button type="submit" class="btn-filtro">Aplicar</button>
+            </form>
+        </div>
+        
+
+
+        <!-- cards  -->
+        <div class="seccion-cards">
+            <div class="card">
+                <img src="./static/img/sm-a546-galaxy-a54-5-g-awesome-graphite-front-1-14.png" alt="Celular 1">
+                <div class="card-content">
+                    <h3>Samsung A54 5g</h3>
+                    <p>Pantalla de 6,4 pulgadas con una resolución de 1080 x 2340 (FHD+). La cámara trasera tiene 50 MP + 12 MP + 5 MP, y la cámara frontal tiene 12 MP.</p>
+                    <h3 class="price">$500</h3>
+                    <button class="btn-comprar">Comprar</button>
+                </div>
+            </div>
+            <div class="card">
+                <img src="./static/img/sm-a546-galaxy-a54-5-g-awesome-graphite-front-1-14.png" alt="Celular 2">
+                <div class="card-content">
+                    <h3>Samsung A54 5g</h3>
+                    <p>Pantalla de 6,4 pulgadas con una resolución de 1080 x 2340 (FHD+). La cámara trasera tiene 50 MP + 12 MP + 5 MP, y la cámara frontal tiene 12 MP. </p>
+                    <h3 class="price">$600</h3>
+                    <button class="btn-comprar">Comprar</button>
+                </div>
+            </div>
+            <div class="card">
+                <img src="./static/img/sm-a546-galaxy-a54-5-g-awesome-graphite-front-1-14.png" alt="Celular 2">
+                <div class="card-content">
+                    <h3>Samsung A54 5g</h3>
+                    <p>Pantalla de 6,4 pulgadas con una resolución de 1080 x 2340 (FHD+). La cámara trasera tiene 50 MP + 12 MP + 5 MP, y la cámara frontal tiene 12 MP. </p>
+                    <h3 class="price">$600</h3>
+                    <button class="btn-comprar">Comprar</button>
+                </div>
+                
+            </div>
+            <div class="card">
+                <img src="./static/img/sm-a546-galaxy-a54-5-g-awesome-graphite-front-1-14.png" alt="Celular 1">
+                <div class="card-content">
+                    <h3>Samsung A54 5g</h3>
+                    <p>Pantalla de 6,4 pulgadas con una resolución de 1080 x 2340 (FHD+). La cámara trasera tiene 50 MP + 12 MP + 5 MP, y la cámara frontal tiene 12 MP.</p>
+                    <h3 class="price">$500</h3>
+                    <button class="btn-comprar">Comprar</button>
+                </div>
+            </div>
+            <div class="card">
+                <img src="./static/img/sm-a546-galaxy-a54-5-g-awesome-graphite-front-1-14.png" alt="Celular 2">
+                <div class="card-content">
+                    <h3>Samsung A54 5g</h3>
+                    <p>Pantalla de 6,4 pulgadas con una resolución de 1080 x 2340 (FHD+). La cámara trasera tiene 50 MP + 12 MP + 5 MP, y la cámara frontal tiene 12 MP. </p>
+                    <h3 class="price">$600</h3>
+                    <button class="btn-comprar">Comprar</button>
+                </div>
+            </div>
+            <div class="card">
+                <img src="./static/img/sm-a546-galaxy-a54-5-g-awesome-graphite-front-1-14.png" alt="Celular 2">
+                <div class="card-content">
+                    <h3>Samsung A54 5g</h3>
+                    <p>Pantalla de 6,4 pulgadas con una resolución de 1080 x 2340 (FHD+). La cámara trasera tiene 50 MP + 12 MP + 5 MP, y la cámara frontal tiene 12 MP. </p>
+                    <h3 class="price">$600</h3>
+                    <button class="btn-comprar">Comprar</button>
+                </div>
+            </div>
+            <div class="card">
+                <img src="./static/img/sm-a546-galaxy-a54-5-g-awesome-graphite-front-1-14.png" alt="Celular 1">
+                <div class="card-content">
+                    <h3>Samsung A54 5g</h3>
+                    <p>Pantalla de 6,4 pulgadas con una resolución de 1080 x 2340 (FHD+). La cámara trasera tiene 50 MP + 12 MP + 5 MP, y la cámara frontal tiene 12 MP.</p>
+                    <h3 class="price">$500</h3>
+                    <button class="btn-comprar">Comprar</button>
+                </div>
+            </div>
+            <div class="card">
+                <img src="./static/img/sm-a546-galaxy-a54-5-g-awesome-graphite-front-1-14.png" alt="Celular 2">
+                <div class="card-content">
+                    <h3>Samsung A54 5g</h3>
+                    <p>Pantalla de 6,4 pulgadas con una resolución de 1080 x 2340 (FHD+). La cámara trasera tiene 50 MP + 12 MP + 5 MP, y la cámara frontal tiene 12 MP. </p>
+                    <h3 class="price">$600</h3>
+                    <button class="btn-comprar">Comprar</button>
+                </div>
+            </div>
+            <div class="card">
+                <img src="./static/img/sm-a546-galaxy-a54-5-g-awesome-graphite-front-1-14.png" alt="Celular 2">
+                <div class="card-content">
+                    <h3>Samsung A54 5g</h3>
+                    <p>Pantalla de 6,4 pulgadas con una resolución de 1080 x 2340 (FHD+). La cámara trasera tiene 50 MP + 12 MP + 5 MP, y la cámara frontal tiene 12 MP. </p>
+                    <h3 class="price">$600</h3>
+                    <button class="btn-comprar">Comprar</button>
+                </div>
+                
+            </div>
+            <div class="card">
+                <img src="./static/img/sm-a546-galaxy-a54-5-g-awesome-graphite-front-1-14.png" alt="Celular 1">
+                <div class="card-content">
+                    <h3>Samsung A54 5g</h3>
+                    <p>Pantalla de 6,4 pulgadas con una resolución de 1080 x 2340 (FHD+). La cámara trasera tiene 50 MP + 12 MP + 5 MP, y la cámara frontal tiene 12 MP.</p>
+                    <h3 class="price">$500</h3>
+                    <button class="btn-comprar">Comprar</button>
+                </div>
+            </div>
+            <div class="card">
+                <img src="./static/img/sm-a546-galaxy-a54-5-g-awesome-graphite-front-1-14.png" alt="Celular 2">
+                <div class="card-content">
+                    <h3>Samsung A54 5g</h3>
+                    <p>Pantalla de 6,4 pulgadas con una resolución de 1080 x 2340 (FHD+). La cámara trasera tiene 50 MP + 12 MP + 5 MP, y la cámara frontal tiene 12 MP. </p>
+                    <h3 class="price">$600</h3>
+                    <button class="btn-comprar">Comprar</button>
+                </div>
+            </div>
+            <div class="card">
+                <img src="./static/img/sm-a546-galaxy-a54-5-g-awesome-graphite-front-1-14.png" alt="Celular 2">
+                <div class="card-content">
+                    <h3>Samsung A54 5g</h3>
+                    <p>Pantalla de 6,4 pulgadas con una resolución de 1080 x 2340 (FHD+). La cámara trasera tiene 50 MP + 12 MP + 5 MP, y la cámara frontal tiene 12 MP. </p>
+                    <h3 class="price">$600</h3>
+                    <button class="btn-comprar">Comprar</button>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</div>
+    
+        <div class="row">
+            <hr class="linea">
+        </div>
+
+    </main>
+   
+
+    <footer>
+        
+        <div class="row">
+            <!-- Logo -->
+            <div class="logo">
+                <img src="./static/img/logo dm.png" alt="logodm">
+            </div>
+            <!-- Redes sociales y contacto -->
+            <div class="redes-sociales">
+                <ul>
+                    <li><a href="https://www.instagram.com/digitalmarketxxi" target="instagramdm">Instagram</a></li>
+                    <li><a href="https://www.facebook.com/digitalmarketxxi" target="facebookdm">Facebook</a></li>
+                    <li><a href="https://wa.link/0r3gmg" target="whatsapp">WhatsApp +543417470919</a></li>   
+                </ul>
+            </div>
+            <!-- Formulario de suscripción -->
+            <div class="suscripcion">
+                <h3>Recibí ofertas y promociones</h3>
+                <form action="#" method="get">
+                    <input type="email" name="email" placeholder="Ingresá tu email" required>
+                    <button type="submit">SUSCRIBIRME</button>
+                </form>
+            </div>
+        </div>
+    
+        <div class="row">
+            <hr class="line">
+        </div>
+
+        <div class="row">
+            <!-- Horarios de atención -->
+            <div class="horarios">
+                <h3>Horarios de atención</h3>
+                <p>Lunes a Viernes de 9 a 17hs</p>
+                <p>Sábados 10 a 12hs</p>
+                <p>Email: <a href="mailto:dmrosario1045@gmail.com">dmrosario1045@gmail.com</a></p>
+                
+            </div>
+            <!-- Sección de atajos -->
+            <div class="atajos">
+                <h3>Comprar en Digital Market</h3>
+                <ul>
+                    <li><a href="#">Servicio Técnico</a></li>
+                    <li><a href="#">Política de privacidad</a></li>
+                    <li><a href="#">Botón de arrepentimiento</a></li>
+                </ul>
+            </div>
+            <!-- Recomendados -->
+            <div class="recomendados">
+                <h3>Recomendados</h3>
+                <ul>
+                    <li><a href="#">Samsung</a></li>
+                    <li><a href="#">iPhone</a></li>
+                    <li><a href="#">Motorola</a></li>
+                    <li><a href="#">Xiaomi</a></li>
+                </ul>
+            </div>
+            <!-- Ayuda -->
+            <div class="ayuda">
+                <h3>Ayuda</h3>
+                <ul>
+                    <li><a href="#">Contactanos</a></li>
+                    <li><a href="#">Dirección de showroom</a></li>
+                    <li><a href="#">Vendé en Digital Market</a></li>
+                    <li><a href="#">Trabajá con nosotros</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
