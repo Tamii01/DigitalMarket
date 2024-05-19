@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background-color: rgba(255, 255, 255, 0.434);
+}
+
+
+h1,
+h2 {
+  color: black;
+
+}
+
+::placeholder {
+  position: relative;
+  left: 10px;
+}
+
+.fondo {
+  border-radius: 20px;
+  background-color: #58b2d8;
+  width: 1560px;
+  height: 900px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  top: 24px;
+  box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.749);
+  /* Propiedad de sombra */
+}
+
+#nombre,
+#email,
+#problema {
+  border-radius: 5px;
+  position: relative;
+  left: 30px;
+  width: 50%;
+  height: 40px;
+  border: none;
+}
+
+#comentario {
+  border-radius: 5px;
+  position: relative;
+  left: 30px;
+  width: 50%;
+  border: none;
+  resize: none;
+}
+
+.contenedor_campo1 {
+  position: relative;
+  bottom: 40px;
+}
+
+.contenedor_campo2 {
+  position: relative;
+  bottom: 20px;
+}
+
+
+.horarios {
+  position: relative;
+  bottom: 450px;
+  left: 1135px;
+  width: 270px;
+  font-size: 20px;
+}
+
+.form {
+  position: relative;
+  top: 100px;
+}
+
+img {
+  position: relative;
+  width: 450px;
+  left: 890px;
+  bottom: 650px;
+}
+
+.titulo {
+  position: relative;
+  left: 30px;
+}
+
+.contactate {
+  position: relative;
+  right: 3px;
+  bottom: 10px;
+}
+
+#contactate {
+  position: relative;
+  left: 30px;
+  bottom: 60px;
+}
+
+.campos {
+  position: relative;
+  top: 70px;
+}
+
+.btn {
+  position: relative;
+  bottom: 210px;
+  left: 30px;
+  border-radius: 15px;
+  padding: 8px 25px;
+}
+
+.btn:hover {
+  background-color: #0095ff47;
+  cursor: pointer;
+}
+
+textarea {
+  width: 300px;
+  height: 150px;
+  padding: 10px;
+  /* Define el padding inicial */
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  line-height: 1.5;
+  resize: none;
+  /* Desactiva el redimensionamiento */
+  box-sizing: border-box;
+  /* Asegura que el padding no cambie el tamaño total */
+  transition: border-color 0.3s, padding 0.3s;
+  /* Transición suave para el foco */
+}
+
+textarea:focus {
+  outline: none;
+  /* Elimina el borde predeterminado del navegador */
+  padding: 10px;
+  /* Mantiene el mismo padding */
+}
+
+.checkbox {
+  position: relative;
+  bottom: 610px;
+  left: 30px;
+}
+
+.telefono {
+  position: relative;
+  width: 32px;
+  left: 1025px;
+  bottom: 830px;
+}
+
+.email {
+  position: relative;
+  width: 35px;
+  left: 1020px;
+  bottom: 829px;
+}
+
+.ubicacion {
+  position: relative;
+  width: 35px;
+  left: 1020px;
+  bottom: 842px;
+
+}
+
+h4 {
+  position: relative;
+  left: 1070px;
+  bottom: 800px;
+  width: 390px;
+}
+
+.archivo {
+  position: relative;
+  bottom: 620px;
+  left: 30px;
+}
+
+#atencion{
+  font-weight: bold;
+  position: relative;
+  right: 100px;
+  top: 30px;
+}
+
+#dias{
+  position: relative;
+  right: 100px;
+  top: 60px;
+}
