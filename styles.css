@@ -1,5 +1,5 @@
 body {
-	background-color: fff;
+	background-color: #000;
 }
 
 nav {
@@ -134,24 +134,75 @@ nav div ul li i {
 
 /* ----------- */
 
-
-#products {
-  position: relative;
-  width: 660px;
-  top: 60px;
-  margin-left: auto;
-  margin-right: auto;
+main {
+  font-family: "Montserrat", sans-serif;
 }
 
-.carrusel {
-  position: relative;
-  margin-left: auto;
-  margin-right: auto;
-  top: 100px;
-  width: 1800px;
-  height: 470px;
-  right: 36px;
+main > img {
+  width: 100%;
+  height: auto;
+  max-height: 250px;
 }
+
+main .productos_destacados {
+  width: 100%;
+  position: relative;
+  padding-top: 50px;
+}
+
+.productos_destacados h1 {
+  text-align: center;
+  font-size: 32px;
+  text-transform: uppercase;
+  color: #fff;
+  margin-bottom: 40px;
+}
+
+.productos_destacados .carousel_card {
+  width: 300px;
+  height: 480px;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 14px;
+}
+
+.carousel_card img {
+  height: 230px;
+  width: 80%;
+  margin-bottom: 15px;
+}
+
+.carousel_card h4 {
+  font-weight: 700;
+  font-size: 24px;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.carousel_card h5 {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.carousel_card p {
+  overflow: hidden;
+  height: 70px;
+  font-size: 16px;
+}
+
+.carousel_card button {
+  width: 100%;
+  padding: 10px;
+  text-transform: uppercase;
+  background-color: transparent;
+  border: 1px solid #00add5;
+  color: #00add5;
+  border-radius: 32px;
+  font-weight: 700;
+}
+
+
+
 
 #ofertas {
   position: relative;
