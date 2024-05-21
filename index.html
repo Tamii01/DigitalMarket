@@ -95,8 +95,58 @@
         alt="Tecnología para tu vida"
       />
 
-      <section class="productos_destacados">
+      <section class="carousel">
         <h1>Productos destacados</h1>
+        <div class="owl-carousel">
+          <div class="carousel_card">
+            <img src="./assets/images/a02.png" alt="Samsung Galaxy A02" />
+            <h5>Galaxy A02</h5>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ullam
+              soluta doloribus asperiores maxime dicta ea.
+            </p>
+            <h4>$399.999</h4>
+            <button type="button">Comprar</button>
+          </div>
+
+          <div class="carousel_card">
+            <img src="./assets/images/a52.png" alt="Samsung Galaxy A52" />
+            <h5>Galaxy A24</h5>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ullam
+              soluta doloribus asperiores maxime dicta ea.
+            </p>
+            <h4>$399.999</h4>
+            <button type="button">Comprar</button>
+          </div>
+
+          <div class="carousel_card">
+            <img src="./assets/images/S22.png" alt="Samsung Galaxy S22" />
+            <h5>Galaxy S22</h5>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ullam
+              soluta doloribus asperiores maxime dicta ea.
+            </p>
+            <h4>$399.999</h4>
+            <button type="button">Comprar</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="promociones">
+        <img
+          src="./assets/images/banner 1.png"
+          alt="3 cuotas sin interes en smartphones"
+        />
+        <img
+          src="./assets/images/banner 2.png"
+          alt="10% de descuento en efectivo, debito o transferencia"
+        />
+        <hr />
+      </section>
+
+      <section class="carousel">
+        <h1>Ofertas premium</h1>
         <div class="owl-carousel owl-theme">
           <div class="carousel_card">
             <img src="./assets/images/a02.png" alt="Samsung Galaxy A02" />
@@ -133,124 +183,18 @@
         </div>
       </section>
 
-      <!-- banner promos -->
-      <section id="bannerpromos">
-        <div class="bannerpromo1">
-          <img src="./assets/images/banner 1.png" alt="3cuotas" />
-        </div>
-        <div class="bannerpromo2">
-          <img src="./assets/images/banner 2.png" alt="10descuento" />
-        </div>
-      </section>
-
-      <hr class="linea1" />
-
-      <!-- segundo carrusel con cards -->
-
-      <h5 id="ofertas">OFERTAS PREMIUM</h5>
-      <section class="carrusel2">
-        <div class="owl-carousel owl-theme">
-          <div class="sec1">
-            <div class="card" style="width: 18rem">
-              <img
-                src="./assets/images/a02.png"
-                class="img-cel"
-                alt="..."
-                style="width: 250px; left: 18px; top: 6px"
-              />
-              <div class="card-body">
-                <h5 class="card-title">Galaxy A02</h5>
-              </div>
-              <ul class="list-group list-group-flush">
-                <li class="precio">$399.999</li>
-              </ul>
-              <div class="card-body">
-                <a href="#" class="card-link">Comprar</a>
-                <a href="#" class="card-link">Ver más</a>
-                <a href="#" class="carrito">
-                  <img src="./assets/images/carrito.png" alt="Icono de carrito"
-                /></a>
-              </div>
-            </div>
-          </div>
-
-          <div class="sec2">
-            <div class="card" style="width: 18rem">
-              <img
-                src="./assets/images/a52.png"
-                class="img-cel"
-                alt="..."
-                style="width: 250px; left: 18px; top: 6px"
-              />
-              <div class="card-body">
-                <h5 class="card-title">Galaxy A24</h5>
-              </div>
-              <ul class="list-group list-group-flush">
-                <li class="precio">$399.999</li>
-              </ul>
-              <div class="card-body">
-                <a href="#" class="card-link">Comprar</a>
-                <a href="#" class="card-link">Ver más</a>
-                <a href="#" class="carrito">
-                  <img src="./assets/images/carrito.png" alt="Icono de carrito"
-                /></a>
-              </div>
-            </div>
-          </div>
-
-          <div class="sec3">
-            <div class="card" style="width: 18rem">
-              <img
-                src="./assets/images/S22.png"
-                class="img-cel"
-                alt="..."
-                style="width: 250px; left: 18px; top: 6px"
-              />
-              <div class="card-body">
-                <h5 class="card-title">Galaxy S22</h5>
-              </div>
-              <ul class="list-group list-group-flush">
-                <li class="precio">$399.999</li>
-              </ul>
-              <div class="card-body">
-                <a href="#" class="card-link">Comprar</a>
-                <a href="#" class="card-link">Ver más</a>
-                <a href="#" class="carrito">
-                  <img src="./assets/images/carrito.png" alt="Icono de carrito"
-                /></a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Flecha de navegación izquierda -->
-        <div class="prev-btn">
-          <img src="./assets/images/flechaIzq.png" alt="Anterior" />
-        </div>
-
-        <!-- Flecha de navegación derecha -->
-        <div class="next-btn">
-          <img src="./assets/images/flechaDer.png" alt="Siguiente" />
-        </div>
-      </section>
-
-      <!-- video -->
-      <section id="video">
-        <h1 id="galaxy">Descubrí el nuevo Galaxy</h1>
+      <section class="video_promocional">
         <iframe
-          id="vidsam"
-          width="1260"
-          height="515"
+          width="1200"
+          height="525"
           src="https://www.youtube.com/embed/ZUuAjEEJoWM?si=4CL-9wmZfzRK9e-K"
-          title="YouTube video player"
+          title="Video promocional de youtube"
           frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture; web-share"
           referrerpolicy="strict-origin-when-cross-origin"
           allowfullscreen
         ></iframe>
       </section>
-
-      <hr class="linea2" />
     </main>
 
     <footer>
