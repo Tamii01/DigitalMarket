@@ -146,7 +146,7 @@
       </section>
 
       <section class="carousel">
-        <h1>Ofertas premium</h1>
+        <h2>Ofertas premium</h2>
         <div class="owl-carousel owl-theme">
           <div class="carousel_card">
             <img src="./assets/images/a02.png" alt="Samsung Galaxy A02" />
@@ -198,46 +198,54 @@
     </main>
 
     <footer>
-      <div class="rowbarbara">
-        <div class="logo">
-          <img src="./assets/images/logo dm.png" alt="Digital Market Logo" />
+      <section class="footer_cabecera">
+        <div>
+          <a href="./index.html"
+            ><img src="./assets/images/logo dm.png" alt="Logo Digital Market"
+          /></a>
         </div>
-        <div class="redes-sociales">
+        <div class="footer_social">
           <ul>
             <li>
               <a
                 href="https://www.instagram.com/digitalmarketxxi"
-                target="instagramdm"
-                >Instagram</a
-              >
+                target="_blank"
+                ><i class="fa-brands fa-instagram"></i> digitalmarketxxi
+              </a>
             </li>
             <li>
               <a
                 href="https://www.facebook.com/digitalmarketxxi"
-                target="facebookdm"
-                >Facebook</a
-              >
+                target="_blank"
+                ><i class="fa-brands fa-facebook"></i> digitalmarketxxi
+              </a>
             </li>
             <li>
               <a href="https://wa.link/0r3gmg" target="whatsapp"
-                >WhatsApp +543417470919</a
-              >
+                ><i class="fa-brands fa-whatsapp"></i> +543417470919
+              </a>
             </li>
           </ul>
         </div>
-        <div class="suscripcion">
-          <h3>Recibí ofertas y promociones</h3>
-          <form action="#" method="get">
-            <input
-              type="email"
-              name="email"
-              placeholder="Ingresá tu email"
-              required
-            />
-            <button type="submit">SUSCRIBIRME</button>
+
+        <div class="footer_suscripcion">
+          <form action="#" method="POST">
+            <label for="footer_email">Recibí ofertas y promociones</label>
+            <div>
+              <input
+                type="email"
+                name="email"
+                id="footer_email"
+                placeholder="Ingresá tu email"
+                required
+              />
+              <button type="submit">
+                <i class="fa-solid fa-share-from-square"></i>
+              </button>
+            </div>
           </form>
         </div>
-      </div>
+      </section>
 
       <hr />
 
