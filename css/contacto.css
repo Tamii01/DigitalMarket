@@ -11,29 +11,69 @@ body {
   background-color: rgba(255, 255, 255, 0.434);
 }
 
-
-h1,
-h2 {
-  color: black;
-
-}
-
-::placeholder {
-  position: relative;
-  left: 10px;
-}
-
+/*  ------------------------------- LADO IZQUIERDO -------------------------------- */
 .fondo {
   border-radius: 20px;
-  background-color: #58b2d8;
+  background-color: #bac9f3;
   width: 1560px;
   height: 900px;
   margin-left: auto;
   margin-right: auto;
   position: relative;
   top: 24px;
-  box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.749);
-  /* Propiedad de sombra */
+  box-shadow: 10px 10px 15px #cbcbcb;
+
+}
+
+.form {
+  position: relative;
+  bottom: 635px;
+}
+
+
+#contenedor_contacto {
+  position: relative;
+  left: 30px;
+  top: 70px;
+}
+
+h1 {
+  position: relative;
+  right: 3px;
+  top: 590px;
+  color: rgb(0, 0, 0);
+}
+
+#dudas {
+  font-weight: bold;
+  position: relative;
+  top: 600px;
+}
+
+.select {
+  position: relative;
+  top: 710px;
+}
+
+.campos {
+  position: relative;
+  top: 765px;
+}
+
+.contenedor_nombre {
+  position: relative;
+  bottom: 40px;
+}
+
+.contenedor_email {
+  position: relative;
+  bottom: 20px;
+}
+
+.titulo {
+  position: relative;
+  left: 30px;
+  color: rgb(0, 0, 0);
 }
 
 #nombre,
@@ -44,7 +84,8 @@ h2 {
   left: 30px;
   width: 50%;
   height: 40px;
-  border: none;
+  border: 1px solid #8b7e7e;
+  padding: 10px;
 }
 
 #comentario {
@@ -52,66 +93,49 @@ h2 {
   position: relative;
   left: 30px;
   width: 50%;
-  border: none;
   resize: none;
 }
 
-.contenedor_campo1 {
-  position: relative;
-  bottom: 40px;
+textarea {
+  width: 300px;
+  height: 150px;
+  padding: 10px;
+  /* Define el padding inicial */
+  border: 1px solid #8b7e7e;
+  border-radius: 4px;
+  font-size: 16px;
+  resize: none;
+  /* Desactiva el redimensionamiento */
+  box-sizing: border-box;
+  /* Asegura que el padding no cambie el tamaño total */
 }
 
-.contenedor_campo2 {
-  position: relative;
-  bottom: 20px;
+textarea:focus {
+  outline: none;
+  /* Elimina el borde predeterminado del navegador */
+  padding: 10px;
 }
 
-
-.horarios {
+.archivo {
   position: relative;
-  bottom: 450px;
-  left: 1135px;
-  width: 270px;
-  font-size: 20px;
-}
-
-.form {
-  position: relative;
-  top: 100px;
-}
-
-img {
-  position: relative;
-  width: 450px;
-  left: 890px;
-  bottom: 650px;
-}
-
-.titulo {
-  position: relative;
+  bottom: 160px;
   left: 30px;
+  font-weight: bold;
 }
 
-.contactate {
-  position: relative;
-  right: 3px;
-  bottom: 10px;
+h2 {
+  color: rgb(0, 0, 0);
 }
 
-#contactate {
+.checkbox {
   position: relative;
-  left: 30px;
-  bottom: 60px;
-}
-
-.campos {
-  position: relative;
-  top: 70px;
+  top: 110px;
+  left: 32px;
 }
 
 .btn {
   position: relative;
-  bottom: 210px;
+  top: 520px;
   left: 30px;
   border-radius: 15px;
   padding: 8px 25px;
@@ -122,79 +146,76 @@ img {
   cursor: pointer;
 }
 
-textarea {
-  width: 300px;
-  height: 150px;
-  padding: 10px;
-  /* Define el padding inicial */
-  border: 2px solid #ccc;
-  border-radius: 4px;
-  font-size: 16px;
-  line-height: 1.5;
-  resize: none;
-  /* Desactiva el redimensionamiento */
-  box-sizing: border-box;
-  /* Asegura que el padding no cambie el tamaño total */
-  transition: border-color 0.3s, padding 0.3s;
-  /* Transición suave para el foco */
-}
-
-textarea:focus {
-  outline: none;
-  /* Elimina el borde predeterminado del navegador */
-  padding: 10px;
-  /* Mantiene el mismo padding */
-}
-
-.checkbox {
+.warnings {
   position: relative;
-  bottom: 610px;
-  left: 30px;
+  width: 200px;
+  height: 100px;
+  text-align: center;
+  margin: auto;
+  color: #ffffff;
+  padding-top: 20px;
+  top: 94px;
+  right: 500px;
 }
 
-.telefono {
+/* --------------------------------------- DERECHA ----------------------------------------- */
+img:not(.email, .ubicacion, .telefono) {
   position: relative;
-  width: 32px;
-  left: 1025px;
-  bottom: 830px;
+  width: 450px;
+  left: 890px;
+  top: 80px;
+}
+
+h4 {
+  position: relative;
+  left: 1070px;
+  bottom: 60px;
+  width: 390px;
+  padding: 4px;
+}
+
+#telefono{
+  position: relative;
+  bottom: 67px;
 }
 
 .email {
   position: relative;
   width: 35px;
   left: 1020px;
-  bottom: 829px;
+  bottom: 90px;
 }
 
 .ubicacion {
   position: relative;
   width: 35px;
-  left: 1020px;
-  bottom: 842px;
-
+  left: 1019px;
+  bottom: 110px;
 }
 
-h4 {
+.telefono {
   position: relative;
-  left: 1070px;
-  bottom: 800px;
-  width: 390px;
+  width: 32px;
+  left: 1022.4px;
+  bottom: 100px;
 }
 
-.archivo {
+.horarios {
   position: relative;
-  bottom: 620px;
-  left: 30px;
+  top: 330px;
+  left: 1135px;
+  width: 270px;
+  font-size: 20px;
 }
 
-#atencion{
+#atencion {
   font-weight: bold;
   position: relative;
   right: 100px;
   top: 30px;
 }
 
-#dias{
+#dias {
   position: relative;
   right: 100px;
   top: 60px;
