@@ -194,152 +194,73 @@ body {
 }
 /* -------------------------------------carrusel------------------------------------------- */
 
+main .carousel {
+	position: relative;
+	width: 100vw;
+	height: 650px;
+	padding: 50px 30px 0;
+	overflow: hidden;
+  }
+  
+  .owl-carousel, .owl-stage {
+	height: 500px;
+	margin: 0 auto;
+  }
+  
+  .carousel h1 {
+	text-align: center;
+	font-size: 32px;
+	text-transform: uppercase;
+	color: #fff;
+	margin-bottom: 60px;
+  }
+  
+  .carousel .carousel_card {
+	width: 300px;
+	height: 470px;
+	background-color: #fff;
+	padding: 20px;
+	border-radius: 14px;
+	margin-left: 50px;
+  }
+  
+  .carousel_card img {
+	height: 230px;
+	width: 80%;
+	margin-bottom: 15px;
+  }
+  
+  .carousel_card h4 {
+	font-weight: 700;
+	font-size: 24px;
+	text-align: center;
+	margin-bottom: 12px;
+  }
+  
+  .carousel_card h5 {
+	font-size: 18px;
+	font-weight: 700;
+  }
+  
+  .carousel_card p {
+	overflow: hidden;
+	height: 66px;
+	font-size: 16px;
+	margin-bottom: 10px;
+  }
+  
+  .carousel_card button {
+	width: 100%;
+	padding: 10px;
+	text-transform: uppercase;
+	background-color: transparent;
+	border: 1px solid #00add5;
+	color: #00add5;
+	border-radius: 32px;
+	font-weight: 700;
+  }
+  
 
-/* botones 2do carrusel*/
-.prev-btn,
-.next-btn {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  z-index: 9999;
-  cursor: pointer;
-}
-
-.prev-btn img,
-.next-btn img {
-  width: 100px;
-  height: 100px;
-}
-
-/* boton izquierdo */
-.prev-btn img {
-  position: relative;
-  right: 70px;
-  width: 40px;
-  height: 40px;
-}
-
-/* boton derecho */
-.next-btn img {
-  position: relative;
-  left: 1780px;
-  width: 40px;
-  height: 40px;
-}
-
-
-/* ----------- */
-
-
-#products {
-  position: relative;
-  width: 660px;
-  top: 60px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.carrusel {
-  position: relative;
-  margin-left: auto;
-  margin-right: auto;
-  top: 100px;
-  width: 1800px;
-  height: 470px;
-  right: 36px;
-}
-
-#ofertas {
-  position: relative;
-  width: 660px;
-  bottom: 10px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.carrusel2 {
-  position: relative;
-  margin-left: auto;
-  margin-right: auto;
-  top: 100px;
-  width: 1800px;
-  height: 470px;
-  left: 20px;
-}
-
-
-/* fondo carrusel */
-.owl-carousel {
-  height: 470px;
-  width: 1800px !important;
-  margin-left: auto;
-  margin-right: auto;
-  right: 30px;
-
-}
-
-/* elementos del carrusel */
-.owl-stage {
-  margin-left: auto;
-  margin-right: auto;
-  right: 16px;
-}
-
-/* cuantos items muestra */
-.owl-item.active {
-  width: 9% !important;
-}
-
-
-.linea1 {
-  border-bottom: 1px solid rgb(255, 255, 255);
-  /* Puedes ajustar el grosor y el color de la línea */
-  width: 85%;
-  /* Puedes ajustar el ancho de la línea */
-  position: relative;
-  margin-left: auto;
-  margin-right: auto;
-  bottom: 100px;
-}
-
-.card {
-  border-radius: 16px !important;
-  margin-left: auto;
-  margin-right: auto;
-  height: 470px;
-}
-
-.carrito img {
-  width: 40px !important;
-  position: relative;
-  left: 190px;
-  bottom: 30px;
-
-}
-
-.card-link {
-  align-items: center;
-}
-
-.card-title {
-  text-align: center;
-  top: 30px !important;
-}
-
-.img-cel {
-  position: relative;
-  right: 10px;
-}
-
-.precio {
-  text-align: center;
-  font-size: 30px;
-  font-weight: 890;
-  list-style-type: none;
-}
-
-
-/* -------------------------------------- end carrusel --------------------------------------- */
 
 
 
