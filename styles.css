@@ -314,9 +314,39 @@ footer .footer_cabecera {
   color: #007a99;
 }
 
+.footer_informacion {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  font-size: 18px;
+  margin-top: 30px;
+  max-width: 1400px;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.footer_informacion div h4 {
+  color: #00add5;
+  font-weight: 700;
+  font-size: 22px;
+}
+
+.footer_informacion div ul {
+  padding-left: 0;
+}
+
+.footer_informacion div ul li {
+  text-decoration: underline;
+  color: #007a99;
+}
 
 
 
+@media screen and (max-width: 1100px) {
+  .footer_informacion {
+    grid-template-columns: auto auto;
+  }
+}
 
 @media screen and (max-width: 780px) {
   footer .footer_cabecera {
@@ -325,6 +355,21 @@ footer .footer_cabecera {
 
   .footer_cabecera div:first-child {
     display: none;
+  }
+}
+
+@media screen and (max-width: 670px) {
+  .footer_informacion {
+    display: block;
+  }
+
+  .footer_informacion div {
+    width: 50%;
+    display: inline-block;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 15px;
   }
 }
 
@@ -340,40 +385,8 @@ footer .footer_cabecera {
   }
 }
 
-
-
-.rowbarbara {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  margin-bottom: 20px;
-  flex-wrap: wrap;
+@media screen and (max-width: 500px) {
+  .footer_informacion div {
+    width: 100%;
+  }
 }
-
-.horarios p {
-  font-size: small;
-  line-height: 0.5;
-}
-
-.horarios,
-.atajos,
-.recomendados,
-.ayuda {
-  flex: 1;
-  margin: 40px;
-}
-
-.horarios h3,
-.atajos h3,
-.recomendados h3,
-.ayuda h3 {
-  margin-top: 0;
-  color: #00add5;
-}
-
-.recomendados {
-  margin-right: 5px;
-}
-
-
