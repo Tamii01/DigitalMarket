@@ -1,5 +1,12 @@
-html, body {
-	background-color: #000;
+html {
+  background-color: #000;
+  overflow-x: hidden;
+  opacity: 0;
+  transition: opacity 1s ease;
+}
+
+body {
+  background-color: #000;
   overflow-x: hidden;
 }
 
@@ -44,6 +51,11 @@ nav div ul li a {
 	color: #fff;
 	padding: 5px 30px;
 	text-transform: uppercase;
+  transition: color 0.3s ease;
+}
+
+nav div ul li a:hover {
+  color: #00add5;
 }
 
 nav div ul li i {
@@ -51,6 +63,11 @@ nav div ul li i {
 	color: #fff;
 	text-decoration: none;
 	margin: 5px 15px;
+  transition: color 0.3s ease, transform 0.5s ease;
+}
+
+nav div ul li i:hover {
+  color: #00add5;
 }
 
 #listBusquedaNav input {
@@ -61,6 +78,8 @@ nav div ul li i {
 	font-size: 16px;
 	display: none;
 	font-family: inter, sans-serif;
+  transition: opacity 1s ease;
+  opacity: 0;
 }
 
 #listBusquedaNav label {
@@ -77,6 +96,9 @@ nav div ul li i {
 	background: none;
 	border: none;
 	display: none;
+  z-index: 2;
+  transition: opacity 1.5s ease;
+  opacity: 0;
 }
 
 #listBusquedaNav button i {
