@@ -6,187 +6,6 @@ body{
   padding: 200;
 }
 
-.bannersamsung {
-  width: 100%;
-  height: auto; 
-  background-size: cover;
-  background-position: center;
-}
-.contenedor-principal {
-  display: grid;
-  grid-template-columns: 300px 1fr;
-  padding: 20px;
-  gap: 20px; 
-}
-
-/* estilo para el filtro */
-.seccion-filtro {
-    background-color: #282828;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-
-}
-.seccion-filtro label{
-  font-weight: bold;
-}
-
-.seccion-filtro h2 {
-    margin-bottom: 15px;
-    color: #ffffff;
-}
-
-.grupo-formulario {
-    margin-bottom: 15px;
-}
-
-.grupo-formulario label {
-    display: block;
-    margin-bottom: 5px;
-    color: #ffffff;
-}
-
-.grupo-formulario select,
-.grupo-formulario input[type="range"] {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-}
-
-.contenedor-rango-precio {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.contenedor-rango-precio output {
-    font-size: 14px;
-    color: #ffffff;
-}
-
-.grupo-checkbox {
-    display: flex;
-    flex-direction: column;
-}
-
-.grupo-checkbox label {
-    font-weight:100;
-    display: flex;
-    align-items: center;
-    margin-bottom: 5px;
-    color: #ffffff;
-}
-
-.grupo-checkbox input[type="checkbox"] {
-    margin-right: 10px;
-}
-
-.btn-filtro {
-    background-color: #00add5;
-    color: #fff;
-    padding: 10px 15px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-.btn-filtro:hover {
-    background-color: #008bb5;
-}
-
-.linea {
-  width: 100%;
-  border: 5px solid #008bb5;
-}
-
-/* estilo para las cards */
-
-.seccion-cards {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-  text-align: center;
-
-}
-
-.card {
-  background-color: #fff;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  overflow: hidden;
-  width: calc(33.333% - 20px); 
-  box-sizing: border-box;
-}
-
-.card img {
-  width: 100%;
-  height: auto;
-  display: block;
-
-}
-
-.card-content {
-  padding: 10px;
-}
-
-.card-content h3 {
-  margin: 0 0 8px;
-  font-size: 1em;
-  color: #333;
-}
-
-.card-content p {
-  margin: 0 0 8px;
-  color: #777;
-  font-size: small;
-}
-
-.card-content .price {
-  font-size: 1.1em;
-  color: #00add5;
-  margin-bottom: 8px;
-
-}
-
-.btn-comprar {
-  background-color: #00add5;
-  color: #fff;
-  padding: 8px 10px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-  width: 100%;
-}
-
-.btn-comprar:hover {
-  background-color: #008bb5;
-}
-
-/* Media queries */
-@media (max-width: 1024px) {
-  .contenedor-principal {
-      grid-template-columns: 1fr; 
-  }
-  .seccion-cards {
-      justify-content: center; 
-  }
-  .card {
-      width: calc(50% - 20px); 
-  }
-}
-
-@media (max-width: 768px) {
-  .card {
-      width: calc(100% - 20px); 
-  }
-  .card-content p {
-      display: none; 
-  }
-}
 
 /* estilo para el footer */
 
@@ -201,14 +20,14 @@ footer {
 }
 
 footer a {
-  color: #ffffff; /* Color del texto */
-  text-decoration: none; /* Quita el subrayado predeterminado */
-  margin-right: 10px; /* Espacio entre los enlaces */
-  transition: color 0.3s ease; /* Efecto de transición suave para el cambio de color */
+  color: #ffffff; 
+  text-decoration: none; 
+  margin-right: 10px; 
+  transition: color 0.3s ease; 
 }
 
 footer a:hover {
-  color: #00add5; /* Cambia el color del texto al pasar el ratón sobre el enlace */
+  color: #00add5; 
 }
 
 .row {
@@ -238,16 +57,16 @@ footer a:hover {
   margin-right: 60px;
 }
 .suscripcion button {
-  background-color: #00add5; /* Color celeste */
-  color: #ffffff; /* Color del texto */
-  border: none; /* Sin borde */
-  padding: 10px; /* Espaciado interno */
-  cursor: pointer; /* Cambia el cursor al pasar por encima */
-  transition: background-color 0.3s ease; /* Transición suave para el cambio de color */
-  border-radius: 10px; /* Bordes redondeados */
+  background-color: #00add5; 
+  color: #ffffff; 
+  border: none; 
+  padding: 10px; 
+  cursor: pointer; 
+  transition: background-color 0.3s ease; 
+  border-radius: 10px; 
 }
 .suscripcion button:hover {
-  background-color: #007a99; /* Celeste más oscuro al pasar el ratón por encima */
+  background-color: #007a99; 
 }
 
 .suscripcion input {

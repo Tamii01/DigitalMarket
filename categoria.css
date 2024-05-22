@@ -1,0 +1,349 @@
+body {
+  background-color: #000000;
+  font-family: "Montserrat", sans-serif;
+  margin: 200;
+  padding: 200;
+}
+
+.bannersamsung {
+  width: 100%;
+  height: auto;
+}
+
+.bannersamsung img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.contenedor-principal {
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  padding: 20px;
+  gap: 20px;
+}
+
+/* estilo para el filtro */
+.seccion-filtro {
+  background-color: #282828;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#toggle-filtro {
+  display: none;
+  
+}
+
+.seccion-filtro label[for="toggle-filtro"]{
+  font-size: large;
+  
+}
+
+.seccion-filtro label {
+  font-weight: bold;
+  color: white;
+  padding-top: 10px;
+  
+}
+
+.seccion-filtro h2 {
+  margin-bottom: 15px;
+  color: #ffffff;
+}
+
+.grupo-formulario {
+  margin-bottom: 15px;
+}
+
+#formulario-filtro {
+  max-height: none;
+  overflow: visible;
+  transition: none;
+}
+
+.grupo-formulario label {
+  display: block;
+  margin-bottom: 5px;
+  color: #ffffff;
+}
+
+.grupo-formulario select,
+.grupo-formulario input[type="range"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.contenedor-rango-precio {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.contenedor-rango-precio output {
+  font-size: 14px;
+  color: #ffffff;
+}
+
+.grupo-checkbox {
+  display: flex;
+  flex-direction: column;
+}
+
+.grupo-checkbox label {
+  font-weight: 100;
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+  color: #ffffff;
+}
+
+.grupo-checkbox input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+.btn-filtro {
+  background-color: #00add5;
+  color: #fff;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-filtro:hover {
+  background-color: #008bb5;
+}
+
+.linea {
+  width: 100%;
+  border: 5px solid #008bb5;
+}
+
+/* estilo para las cards */
+
+.seccion-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  text-align: center;
+}
+
+.card {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  width: calc(33.333% - 20px);
+  box-sizing: border-box;
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.card-content {
+  padding: 10px;
+}
+
+.card-content h3 {
+  margin: 0 0 8px;
+  font-size: 1em;
+  color: #333;
+}
+
+.card-content p {
+  margin: 0 0 8px;
+  color: #777;
+  font-size: small;
+}
+
+.card-content .price {
+  font-size: 1.1em;
+  color: #00add5;
+  margin-bottom: 8px;
+}
+
+.btn-comprar {
+  background-color: #00add5;
+  color: #fff;
+  padding: 8px 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 100%;
+}
+
+.btn-comprar:hover {
+  background-color: #008bb5;
+}
+
+/* estilo para el footer */
+
+footer {
+  background-color: #000000;
+  color: #ffffff;
+  padding: 40px;
+  justify-content: space-between;
+  align-items: normal;
+  display: flex;
+  flex-direction: column;
+}
+
+footer a {
+  color: #ffffff;
+  text-decoration: none;
+  margin-right: 10px;
+  transition: color 0.3s ease;
+}
+
+footer a:hover {
+  color: #00add5;
+}
+
+.row {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+.line {
+  width: 100%;
+  border: 1px solid white;
+}
+
+.logo img {
+  width: 150px;
+  margin-left: 40px;
+}
+
+.redes-sociales ul {
+  margin-left: 60px;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.suscripcion {
+  margin-left: 20px;
+  margin-right: 60px;
+}
+.suscripcion button {
+  background-color: #00add5;
+  color: #ffffff;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  border-radius: 10px;
+}
+.suscripcion button:hover {
+  background-color: #007a99;
+}
+
+.suscripcion input {
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.horarios p {
+  font-size: small;
+  line-height: 0.5;
+}
+
+.horarios,
+.atajos,
+.recomendados,
+.ayuda {
+  flex: 1;
+  margin: 40px;
+}
+
+.horarios h3,
+.atajos h3,
+.recomendados h3,
+.ayuda h3 {
+  margin-top: 0;
+  color: #00add5;
+}
+
+.recomendados {
+  margin-right: 5px;
+}
+
+/* Media queries */
+@media (max-width: 1024px) {
+  .contenedor-principal {
+    grid-template-columns: 1fr;
+  }
+
+  
+
+  #formulario-filtro {
+    max-height: none;
+    overflow: visible;
+    transition: none;
+  }
+  .seccion-cards {
+    justify-content: center;
+  }
+  .card {
+    width: calc(50% - 20px);
+  }
+  .row {
+    flex-direction: column;
+    align-items: center;
+  }
+  .logo img {
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .seccion-filtro {
+    display: block;
+  }
+  .seccion-filtro h2{
+    display: none;
+  }
+  
+
+  #toggle-filtro {
+    display: inline-block;
+  }
+
+  #formulario-filtro {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+  }
+
+  #toggle-filtro:checked ~ #formulario-filtro {
+    max-height: 1000px;
+  }
+  .card {
+    width: calc(100% - 20px);
+  }
+  .card-content p {
+    display: none;
+  }
+  footer {
+    padding: 20px;
+  }
+  .horarios,
+  .atajos,
+  .recomendados,
+  .ayuda {
+    margin: 10px 0;
+  }
+}
