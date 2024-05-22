@@ -360,14 +360,49 @@ footer .footer_cabecera {
 }
 
 
+/* ! Estas MQ para hacer la nav responsiva son temporales
+  * Cuando obtengamos las categorias del backend se va a calcular
+  * cuantas entran en el ancho de la pantalla y va haber un listener
+  * para el evento de resize
+*/
+@media screen and (max-width: 1600px) {
+  .categoriasNav ul li:nth-child(1) {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1460px) {
+  .categoriasNav ul li:nth-child(2) {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  .categoriasNav ul li:nth-child(3) {
+    display: none;
+  }
+}
 
 @media screen and (max-width: 1100px) {
+  .categoriasNav ul li:nth-child(4) {
+    display: none;
+  }
+
+  .categoriasNav ul li a {
+    padding: 5px 10px;
+  }
+
   .footer_informacion {
     grid-template-columns: auto auto;
   }
 }
 
+
 @media screen and (max-width: 780px) {
+  .categoriasNav ul li:nth-child(5) {
+    display: none;
+  }
+
   footer .footer_cabecera {
     grid-template-columns: auto auto;
   }
@@ -378,6 +413,14 @@ footer .footer_cabecera {
 }
 
 @media screen and (max-width: 670px) {
+  .categoriasNav ul li:nth-child(6) {
+    display: none;
+  }
+
+  .categoriasNav ul li a {
+    padding: 5px 5px;
+  }
+
   .footer_informacion {
     display: block;
   }
@@ -405,6 +448,18 @@ footer .footer_cabecera {
 }
 
 @media screen and (max-width: 500px) {
+  .categoriasNav ul li:nth-child(7) {
+    display: none;
+  }
+
+  nav {
+	  grid-template-columns: 50px calc(100% - 200px - 100px) 130px;
+  }
+
+  nav div ul li i {
+    margin: 5px 5px;
+  }
+
   .footer_informacion div {
     width: 100%;
   }
