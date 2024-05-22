@@ -1,10 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 body {
@@ -16,25 +16,23 @@ body {
   border-radius: 20px;
   background-color: #bac9f3;
   width: 1560px;
-  height: 900px;
+  height: 860px;
   margin-left: auto;
   margin-right: auto;
   position: relative;
-  top: 24px;
+  top: 50px;
   box-shadow: 10px 10px 15px #cbcbcb;
-
 }
 
 .form {
   position: relative;
-  bottom: 635px;
+  bottom: 691px;
 }
-
 
 #contenedor_contacto {
   position: relative;
   left: 30px;
-  top: 70px;
+  top: 130px;
 }
 
 h1 {
@@ -45,19 +43,19 @@ h1 {
 }
 
 #dudas {
-  font-weight: bold;
   position: relative;
   top: 600px;
+  font-size: 20px;
 }
 
 .select {
   position: relative;
-  top: 710px;
+  top: 780px;
 }
 
 .campos {
   position: relative;
-  top: 765px;
+  top: 840px;
 }
 
 .contenedor_nombre {
@@ -118,7 +116,7 @@ textarea:focus {
 
 .archivo {
   position: relative;
-  bottom: 160px;
+  top: 850px;
   left: 30px;
   font-weight: bold;
 }
@@ -129,16 +127,17 @@ h2 {
 
 .checkbox {
   position: relative;
-  top: 110px;
+  top: 890px;
   left: 32px;
 }
 
 .btn {
   position: relative;
-  top: 520px;
+  top: 480px;
   left: 30px;
   border-radius: 15px;
   padding: 8px 25px;
+  border: none;
 }
 
 .btn:hover {
@@ -152,10 +151,13 @@ h2 {
   height: 100px;
   text-align: center;
   margin: auto;
-  color: #ffffff;
+  color: #ff0000;
   padding-top: 20px;
-  top: 94px;
+  top: 140px;
   right: 500px;
+  font-weight: bold;
+  font-size: 15px;
+  
 }
 
 /* --------------------------------------- DERECHA ----------------------------------------- */
@@ -202,7 +204,7 @@ h4 {
 
 .horarios {
   position: relative;
-  top: 330px;
+  top: 280px;
   left: 1135px;
   width: 270px;
   font-size: 20px;

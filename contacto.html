@@ -6,6 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulario de contacto</title>
     <link rel="stylesheet" href="css/contacto.css">
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Forum&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet" />
 
 </head>
 
@@ -44,7 +50,7 @@
                     <!-- CAMPO NOMBRE -->
                     <div class="contenedor_nombre">
                         <h2 class="titulo">Tu nombre</h2>
-                        <input type="text" name="nombre" id="nombre" placeholder="Ingrese su nombre" req>
+                        <input type="text" name="nombre" id="nombre" placeholder="Ingrese su nombre">
                     </div>
 
                     <!-- CAMPO EMAIL -->
@@ -60,7 +66,17 @@
                     </div>
                 </div>
 
+                <div class="archivo">
+                    <h2>Subir un archivo</h2>
+                    <label for="file-upload">Elige un archivo:</label>
+                    <input type="file" id="file-upload" name="file-upload">
+                    <br><br>
+                </div>
 
+                <div class="checkbox">
+                    <input type="checkbox" name="info" id="info">
+                    <label for="info">Solicitar una copia del mensaje enviado</label>
+                </div>
                 <!-- CAMPO SUBMIT -->
 
                 <button type="submit" class="btn">enviar</button>
@@ -83,19 +99,9 @@
                     <img src="images/telefono.png" alt="" class="telefono">
                 </div>
                 <!-- Checkbox -->
-                <div class="checkbox">
-                    <input type="checkbox" name="info" id="info">
-                    <label for="info">Solicitar una copia del mensaje enviado</label>
-                </div>
 
                 <p class="warnings" id="warnings"></p>
 
-                <div class="archivo">
-                    <h2>Subir un archivo</h2>
-                    <label for="file-upload">Elige un archivo:</label>
-                    <input type="file" id="file-upload" name="file-upload">
-                    <br><br>
-                </div>
 
             </div>
 
