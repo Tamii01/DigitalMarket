@@ -1,0 +1,355 @@
+ 
+body {
+	background-color: #000;
+	font-family: "Montserrat", sans-serif;
+}
+
+.contenedor_card {
+	position: relative;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 95vw;
+	height: 700px;
+	background-color: #fff;
+	border-radius: 15px;
+	padding: 30px;
+	box-sizing: border-box;
+}
+
+.producto_card {
+	position: relative;
+	left: 50%;
+	transform: translateX(-50%);
+	max-width: 1200px;
+}
+
+.producto_card_izquierda {
+	float: left;
+}
+
+.producto_card_izquierda .card_imagenes {
+	width: 70px;
+	height: 600px;
+	display: inline-block;
+}
+
+.card_imagenes img {
+	width: 60px;
+	height: 90px;
+	margin: 14px 0;
+}
+
+.producto_card_izquierda .card_imagen_principal {
+	margin: 0 30px;
+	width: 500px;
+	height: 600px;
+	display: inline-block;
+	position: relative;
+	top: -30px;
+}
+
+
+.card_imagen_principal > button {
+	position: absolute;
+	top: 45%;
+	transform: translateY(-50%);
+	background-color: transparent;
+	border: none;
+	width: 40px;
+	height: 100px;
+}
+
+.card_imagen_principal > button:hover {
+	background-color: #ccc;
+	cursor: pointer;
+}
+
+.card_imagen_principal > button:active {
+	background-color: #a5a5a5;
+	cursor: pointer;
+}
+
+.card_imagen_principal .card_flecha_derecha {
+	right: 0;
+}
+
+.card_imagen_principal img {
+	position: relative;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 400px;
+	height: 550px;
+}
+
+.card_imagen_principal .card_botones_abajo {
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	margin-top: 10px;
+}
+
+.card_botones_abajo button {
+	width: 15px;
+	height: 15px;
+	border-radius: 50%;
+	border: none;
+	margin: 0 5px;
+}
+
+.card_botones_abajo button:first-child {
+	background-color: #686868;
+}
+
+.card_botones_abajo button:hover {
+	cursor: pointer;
+}
+
+.producto_card_derecha {
+	float: right;
+}
+
+.producto_card_derecha h1 {
+	font-size: 40px;
+	text-transform: uppercase;
+}
+
+.producto_card_derecha p {
+	font-size: 20px;
+}
+
+.producto_card_derecha a {
+	display: inline-block;
+	margin-top: 30px;
+}
+
+.producto_card_derecha .producto_mediosdepago img {
+	width: 60px;
+	height: 40px;
+	margin: 0 10px;
+}
+
+.producto_card_derecha a {
+	font-size: 20px;
+	text-decoration: none;
+}
+
+.producto_card_derecha .producto_costo {
+	font-size: 64px;
+}
+
+.producto_card_derecha .producto_cuotas {
+	font-size: 24px;
+	color: #00ADD5;
+}
+
+.producto_card_derecha button {
+	background-color: #00ADD5;
+	border-radius: 4px;
+	cursor: pointer;
+	color: #fff;
+	text-transform: uppercase;
+	border: none;
+	width: 300px;
+	height: 70px;
+	font-weight: 700;
+	font-size: 30px;
+}
+
+.contenedor_caracteristicas {
+	color: #fff;
+	position: relative;
+}
+
+.contenedor_caracteristicas h2 {
+	font-size: 48px;
+	text-align: center;
+}
+
+.contenedor_caracteristicas table {
+	background-color: rgba(255, 255, 255, 0.17);
+	margin: 0 auto;
+	border-collapse: separate;
+	border-spacing: 0;
+	border: 1px solid #fff;
+	border-radius: 20px;
+	max-width: 1100px;
+	overflow: hidden;
+}
+
+.contenedor_caracteristicas table tbody td {
+	border-bottom: 1px solid #fff;
+	padding: 50px;
+	text-align: left;
+}
+
+.contenedor_caracteristicas table tbody td:nth-child(1) {
+    width: 40%;
+	text-align: center;
+	font-size: 32px;
+}
+
+.contenedor_caracteristicas table tbody td:nth-child(2) {
+    width: 60%;
+	font-size: 20px;
+}
+/* -------------------------------------carrusel------------------------------------------- */
+
+
+/* botones 2do carrusel*/
+.prev-btn,
+.next-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 9999;
+  cursor: pointer;
+}
+
+.prev-btn img,
+.next-btn img {
+  width: 100px;
+  height: 100px;
+}
+
+/* boton izquierdo */
+.prev-btn img {
+  position: relative;
+  right: 70px;
+  width: 40px;
+  height: 40px;
+}
+
+/* boton derecho */
+.next-btn img {
+  position: relative;
+  left: 1780px;
+  width: 40px;
+  height: 40px;
+}
+
+
+/* ----------- */
+
+
+#products {
+  position: relative;
+  width: 660px;
+  top: 60px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.carrusel {
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  top: 100px;
+  width: 1800px;
+  height: 470px;
+  right: 36px;
+}
+
+#ofertas {
+  position: relative;
+  width: 660px;
+  bottom: 10px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.carrusel2 {
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  top: 100px;
+  width: 1800px;
+  height: 470px;
+  left: 20px;
+}
+
+
+/* fondo carrusel */
+.owl-carousel {
+  height: 470px;
+  width: 1800px !important;
+  margin-left: auto;
+  margin-right: auto;
+  right: 30px;
+
+}
+
+/* elementos del carrusel */
+.owl-stage {
+  margin-left: auto;
+  margin-right: auto;
+  right: 16px;
+}
+
+/* cuantos items muestra */
+.owl-item.active {
+  width: 9% !important;
+}
+
+
+.linea1 {
+  border-bottom: 1px solid rgb(255, 255, 255);
+  /* Puedes ajustar el grosor y el color de la línea */
+  width: 85%;
+  /* Puedes ajustar el ancho de la línea */
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  bottom: 100px;
+}
+
+.card {
+  border-radius: 16px !important;
+  margin-left: auto;
+  margin-right: auto;
+  height: 470px;
+}
+
+.carrito img {
+  width: 40px !important;
+  position: relative;
+  left: 190px;
+  bottom: 30px;
+
+}
+
+.card-link {
+  align-items: center;
+}
+
+.card-title {
+  text-align: center;
+  top: 30px !important;
+}
+
+.img-cel {
+  position: relative;
+  right: 10px;
+}
+
+.precio {
+  text-align: center;
+  font-size: 30px;
+  font-weight: 890;
+  list-style-type: none;
+}
+
+
+/* -------------------------------------- end carrusel --------------------------------------- */
+
+
+
+
+
+
+
+
+
+
+
+
+
