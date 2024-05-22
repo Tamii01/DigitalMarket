@@ -1,5 +1,5 @@
 # Digital Market
-Es una aplicación web de e-commerce diseñada para la empresa "Digital Market" que se especializa en ventas de productos tecnologicos. Este proyecto actualmente está en desarrollo y solo cuenta con el Front End. La plataforma tiene como objetivo proporcionar una experiencia de usuario fluida y atractiva, permitiendo a los clientes navegar, buscar y comprar de manera eficiente y segura. El diseño se centra en la usabilidad y accesibilidad, asegurando que los usuarios puedan encontrar fácilmente lo que buscan y realizar sus compras con confianza.
+Es una aplicación web de e-commerce diseñada para la empresa "Digital Market" que se especializa en ventas de productos tecnologicos. Este proyecto actualmente está en desarrollo y solo cuenta con el Front End. La plataforma tiene como objetivo proporcionar una experiencia de usuario fluida y atractiva, permitiendo a los clientes navegar, buscar y comprar de manera eficiente y segura. El diseño se centra en la usabilidad y accesibilidad, asegurando que los usuarios puedan encontrar fácilmente lo que buscan y realizar sus compras con confianza..
 ## Tecnologías Utilizadas
 
 - ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
