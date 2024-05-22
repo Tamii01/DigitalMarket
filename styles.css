@@ -94,21 +94,27 @@ main {
 
 main > img {
   width: 100%;
-  height: auto;
+  max-width: 2048px;
   max-height: 300px;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 main .carousel {
   position: relative;
-  width: 100vw;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 90vw;
   height: 650px;
   padding: 50px 30px 0;
-  overflow: hidden;
+  box-sizing: content-box;
 }
 
 .owl-carousel, .owl-stage {
   height: 500px;
   margin: 0 auto;
+  width: 100%;
 }
 
 .carousel h1, .carousel h2 {
@@ -120,12 +126,16 @@ main .carousel {
 }
 
 .carousel .carousel_card {
-  width: 300px;
+  width: 100%;
+  min-width: 280px;
+  max-width: 300px;
   height: 470px;
   background-color: #fff;
   padding: 20px;
   border-radius: 14px;
-  margin-left: 50px;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .carousel_card img {
@@ -162,6 +172,11 @@ main .carousel {
   color: #00add5;
   border-radius: 32px;
   font-weight: 700;
+}
+
+.carousel_card button:hover {
+  color: #fff;
+  background-color: #00add5;
 }
 
 
