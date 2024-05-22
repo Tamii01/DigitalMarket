@@ -194,7 +194,7 @@ body {
 }
 /* -------------------------------------carrusel------------------------------------------- */
 
-main .carousel {
+    .carousel {
 	position: relative;
 	width: 100vw;
 	height: 650px;
