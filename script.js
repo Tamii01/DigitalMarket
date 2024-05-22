@@ -33,7 +33,6 @@ function handleBusqueda() {
 							busquedaInput.style.opacity = '1';
 							busquedaBoton.style.opacity = '1';
 							busquedaInput.focus();
-
 						}, 300);
 				}, 300);
 			}, 120);
@@ -53,6 +52,7 @@ function handleBusqueda() {
 				busquedaIcono.style.display = 'block';
 				busquedaIcono.style.transform = 'rotate(0) scaleX(1) translateX(0)';
 				busquedaIcono.style.backgroundColor = "transparent";
+				busquedaForm.reset();
 			}, 600);
 		}, 100);
 	});

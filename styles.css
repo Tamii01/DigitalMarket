@@ -68,6 +68,7 @@ nav div ul li i {
 
 nav div ul li i:hover {
   color: #00add5;
+  cursor: pointer;
 }
 
 #listBusquedaNav input {
@@ -194,11 +195,13 @@ main .carousel {
   color: #00add5;
   border-radius: 32px;
   font-weight: 700;
+  transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
 .carousel_card button:hover {
   color: #fff;
   background-color: #00add5;
+  transform: scale(1.1);
 }
 
 
@@ -213,6 +216,12 @@ main .carousel {
   width: 40%;
   max-width: 600px;
   min-width: 300px;
+  transition: transform 0.5s ease;
+  padding: 0 10px;
+}
+
+.promociones img:hover {
+  transform: scale(1.1);
 }
 
 .promociones hr {
