@@ -1,5 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
-	document.documentElement.style.opacity = '1';
+	document.documentElement.style.opacity = '1'; // animacion de entrada
+	const comprarArray = document.querySelectorAll('.boton_comprar');
+	comprarArray.forEach(e => e.addEventListener('click', () => window.location.href = './producto.html')); // redireccionar al apretar en "comprar"
 	handleBusqueda();
 });
 
