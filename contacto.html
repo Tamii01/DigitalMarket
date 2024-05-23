@@ -30,13 +30,14 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
     />
 
-    <link rel="stylesheet" href="./static/styles/index.css" />
+    <link rel="stylesheet" href="./static/styles/contacto.css" />
     <link
       rel="shortcut icon"
       href="./assets/images/logo_dm.png"
       type="image/x-icon"
     />
   </head>
+
   <body>
     <nav>
       <div>
@@ -75,122 +76,106 @@
             </form>
           </li>
           <li><i class="fas fa-shopping-cart"></i></li>
-          <!-- TODO:
-            ! Al apretar en carrito:
-            * mostrar side panel con los items que agrego al carrito
-          -->
           <li><i class="fas fa-user"></i></li>
-          <!-- TODO:
-            ! Al apretar en usuario:
-            * redireccionar a la pagina de administrador
-          -->
         </ul>
       </div>
     </nav>
 
     <main>
-      <img
-        src="./assets/images/banner principal.png"
-        alt="Tecnología para tu vida"
-      />
-
-      <section class="carousel">
-        <h1>Productos destacados</h1>
-        <div class="owl-carousel">
-          <div class="carousel_card">
-            <img src="./assets/images/a02.png" alt="Samsung Galaxy A02" />
-            <h5>Galaxy A02</h5>
-            <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ullam
-              soluta doloribus asperiores maxime dicta ea.
-            </p>
-            <h4>$399.999</h4>
-            <a href="./producto.html"><button type="button">Comprar</button></a>
-          </div>
-
-          <div class="carousel_card">
-            <img src="./assets/images/a52.png" alt="Samsung Galaxy A52" />
-            <h5>Galaxy A24</h5>
-            <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ullam
-              soluta doloribus asperiores maxime dicta ea.
-            </p>
-            <h4>$399.999</h4>
-            <a href="./producto.html"><button type="button">Comprar</button></a>
-          </div>
-
-          <div class="carousel_card">
-            <img src="./assets/images/S22.png" alt="Samsung Galaxy S22" />
-            <h5>Galaxy S22</h5>
-            <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ullam
-              soluta doloribus asperiores maxime dicta ea.
-            </p>
-            <h4>$399.999</h4>
-            <a href="./producto.html"><button type="button">Comprar</button></a>
-          </div>
+      <section class="lado_izquierdo">
+        <div class="form_cabecera">
+          <h1>¡Contáctanos!</h1>
+          <p>
+            Si tienes alguna duda, problema o sugerencia puedes contactarnos
+            dejándonos tu nombre, email y un mensaje.
+          </p>
         </div>
+
+        <form action="#" method="POST" id="form_contacto">
+          <div class="form_select">
+            <label for="form_select">Seleccione un tipo de solicitud</label>
+            <select name="problema" id="form_select">
+              <option value="0">--Elige una opción--</option>
+              <option value="1">Problemas técnicos con el equipo</option>
+              <option value="2">Facturación o pago de un equipo</option>
+              <option value="3">Reembolsos</option>
+            </select>
+            <p class="form_error" id="error_select"></p>
+          </div>
+
+          <div class="form_nombre">
+            <label for="form_nombre">Tu nombre</label>
+            <input
+              type="text"
+              name="nombre"
+              id="form_nombre"
+              placeholder="Ingrese su nombre"
+            />
+            <p class="form_error" id="error_nombre"></p>
+          </div>
+
+          <div class="form_email">
+            <label for="form_email">Tu email</label>
+            <input
+              type="email"
+              name="email"
+              id="form_email"
+              placeholder="Ingrese su email"
+            />
+            <p class="form_error" id="error_email"></p>
+          </div>
+
+          <div class="form_mensaje">
+            <label for="form_mensaje">Tu mensaje</label>
+            <textarea
+              name="mensaje"
+              id="form_mensaje"
+              cols="30"
+              rows="10"
+            ></textarea>
+            <p class="form_error" id="error_mensaje"></p>
+          </div>
+
+          <div class="form_archivo">
+            <label for="form_archivo">Adjuntar una imagen</label>
+            <input
+              type="file"
+              name="archivo"
+              id="form_archivo"
+              accept="image/*"
+            />
+          </div>
+
+          <div class="form_copia">
+            <input type="checkbox" name="copia" id="form_copia" />
+            <label for="form_copia"
+              >Recibir una copia del mensaje enviado</label
+            >
+          </div>
+
+          <button type="submit">Enviar</button>
+
+          <p id="form_correcto">Mensaje enviado exitosamente</p>
+        </form>
       </section>
 
-      <section class="promociones">
-        <img
-          src="./assets/images/banner 1.png"
-          alt="3 cuotas sin interes en smartphones"
-        />
-        <img
-          src="./assets/images/banner 2.png"
-          alt="10% de descuento en efectivo, debito o transferencia"
-        />
-        <hr />
-      </section>
-
-      <section class="carousel">
-        <h2>Ofertas premium</h2>
-        <div class="owl-carousel owl-theme">
-          <div class="carousel_card">
-            <img src="./assets/images/a02.png" alt="Samsung Galaxy A02" />
-            <h5>Galaxy A02</h5>
-            <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ullam
-              soluta doloribus asperiores maxime dicta ea.
-            </p>
-            <h4>$399.999</h4>
-            <a href="./producto.html"><button type="button">Comprar</button></a>
-          </div>
-
-          <div class="carousel_card">
-            <img src="./assets/images/a52.png" alt="Samsung Galaxy A52" />
-            <h5>Galaxy A24</h5>
-            <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ullam
-              soluta doloribus asperiores maxime dicta ea.
-            </p>
-            <h4>$399.999</h4>
-            <a href="./producto.html"><button type="button">Comprar</button></a>
-          </div>
-
-          <div class="carousel_card">
-            <img src="./assets/images/S22.png" alt="Samsung Galaxy S22" />
-            <h5>Galaxy S22</h5>
-            <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ullam
-              soluta doloribus asperiores maxime dicta ea.
-            </p>
-            <h4>$399.999</h4>
-            <a href="./producto.html"><button type="button">Comprar</button></a>
-          </div>
+      <section class="lado_derecho">
+        <img src="./assets/images/contact.png" alt="Soporte técnico" />
+        <div>
+          <p>
+            Horarios de atencion:<br />Lunes a Viernes de 9 a 17hs<br />Sábados
+            10 a 12hs
+          </p>
         </div>
-      </section>
 
-      <section class="video_promocional">
-        <iframe
-          src="https://www.youtube.com/embed/ZUuAjEEJoWM?si=4CL-9wmZfzRK9e-K"
-          title="Video promocional de youtube"
-          frameborder="0"
-          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture; web-share"
-          referrerpolicy="strict-origin-when-cross-origin"
-          allowfullscreen
-        ></iframe>
+        <div>
+          <p><i class="fas fa-envelope"></i> dmrosario1045@gmail.com</p>
+          <p>
+            <i class="fa-solid fa-location-dot"></i> Av. Sta. Fe 3253, C1091
+            Cdad. Autónoma de Buenos Aires
+          </p>
+          <p><i class="fa-solid fa-phone"></i> +543417470919</p>
+        </div>
       </section>
     </main>
 
@@ -285,11 +270,7 @@
       </section>
     </footer>
 
-    <!-- OWL Carousel & jQuery -->
-    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-
     <script src="./static/scripts/navbar.js"></script>
-    <script src="./static/scripts/carousel.js"></script>
+    <script src="./static/scripts/contacto.js"></script>
   </body>
 </html>

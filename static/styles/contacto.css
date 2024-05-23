@@ -4,10 +4,7 @@ html {
 }
 
 body {
-  background-color: #000000;
-  font-family: "Montserrat", sans-serif;
-  margin: 200;
-  padding: 200;
+  background-color: #000;
   overflow-x: hidden;
 }
 
@@ -112,183 +109,120 @@ nav div ul li i:hover {
 
 
 
-main > img {
-  width: 100%;
-  max-width: 2048px;
-  max-height: 300px;
+main {
+  border-radius: 20px;
+  font-family: "Montserrat", sans-serif;
+  background: linear-gradient(to right, #bac9f3, #9baad4);
+  width: 80vw;
+  height: 700px;
   position: relative;
   left: 50%;
   transform: translateX(-50%);
-}
-
-
-.contenedor-principal {
+  box-shadow: 10px 10px 15px #cbcbcb;
   display: grid;
-  grid-template-columns: 300px auto;
-  padding: 20px;
-  gap: 20px;
+  grid-template-columns: 50% 50%;
+  color: #000;
+  overflow: hidden;
+  max-width: 1400px;
 }
 
-/* estilo para el filtro */
-.seccion-filtro {
-  background-color: #282828;
-  padding: 20px;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+main .lado_izquierdo {
+  position: relative;
+  padding: 20px 50px 50px;
+  height: 80vh;
 }
 
-#toggle-filtro {
-  display: none;
-
+.lado_izquierdo .form_cabecera h1 {
+  margin-bottom: 10px;
+  text-align: center;
 }
 
-.seccion-filtro label[for="toggle-filtro"]{
-  font-size: large;
-
-}
-
-.seccion-filtro label {
-  font-weight: bold;
-  color: white;
-  padding-top: 10px;
-
-}
-
-.seccion-filtro h2 {
-  margin-bottom: 15px;
-  color: #ffffff;
-}
-
-.grupo-formulario {
-  margin-bottom: 15px;
-}
-
-#formulario-filtro {
-  max-height: none;
-  overflow: visible;
-  transition: none;
-}
-
-.grupo-formulario label {
+.lado_izquierdo form label:not(label[for="form_copia"]) {
   display: block;
-  margin-bottom: 5px;
-  color: #ffffff;
-}
-
-.grupo-formulario select,
-.grupo-formulario input[type="range"] {
   width: 100%;
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  box-sizing: border-box;
-}
-
-.contenedor-rango-precio {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.contenedor-rango-precio output {
-  font-size: 14px;
-  color: #ffffff;
-}
-
-.grupo-checkbox {
-  display: flex;
-  flex-direction: column;
-}
-
-.grupo-checkbox label {
-  font-weight: 100;
-  display: flex;
-  align-items: center;
-  margin-bottom: 5px;
-  color: #ffffff;
-}
-
-.grupo-checkbox input[type="checkbox"] {
-  margin-right: 10px;
-}
-
-.btn-filtro {
-  background-color: #00add5;
-  color: #fff;
-  padding: 10px 15px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-
-.btn-filtro:hover {
-  background-color: #008bb5;
-}
-
-
-
-.seccion_cards {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  gap: 20px;
-  text-align: center;
-  justify-content: center;
-  width: 100%;
-}
-
-.seccion_cards .grid_card {
-  width: 100%;
-  min-width: 280px;
-  max-width: 300px;
-  height: 470px;
-  background-color: #fff;
-  padding: 20px;
-  border-radius: 14px;
-}
-
-.grid_card img {
-  height: 230px;
-  width: 80%;
-  margin-bottom: 15px;
-}
-
-.grid_card h4 {
-  font-weight: 700;
-  font-size: 24px;
-  text-align: center;
-  margin-bottom: 12px;
-}
-
-.grid_card h5 {
   font-size: 18px;
   font-weight: 700;
 }
 
-.grid_card p {
-  overflow: hidden;
-  height: 66px;
+.lado_izquierdo form input:not(input[type="file"], input[type="checkbox"]), .lado_izquierdo form textarea {
   font-size: 16px;
-  margin-bottom: 10px;
-}
-
-.grid_card button {
+  padding: 5px;
   width: 100%;
-  padding: 10px;
-  text-transform: uppercase;
-  background-color: transparent;
-  border: 1px solid #00add5;
-  color: #00add5;
-  border-radius: 32px;
-  font-weight: 700;
-  transition: background-color 0.3s ease, transform 0.3s ease;
+  border-radius: 5px;
+  height: 40px;
+  border: 1px solid #8b7e7e;
 }
 
-.grid_card button:hover {
+.lado_izquierdo form textarea {
+  height: 90px;
+  resize: none;
+  box-sizing: border-box;
+}
+
+.lado_izquierdo form .form_copia {
+  padding: 10px 0;
+}
+
+.lado_izquierdo form button {
+  border: 1px solid #000;
   color: #fff;
-  background-color: #00add5;
-  transform: scale(1.1);
+  background-color: #007a99;
+  padding: 10px;
+  border-radius: 10px;
+  width: 100px;
+  font-weight: 700;
+}
+
+.lado_izquierdo form button:hover {
+  background-color: #0066ff;
+}
+
+.lado_izquierdo #form_select {
+  width: 100%;
+  max-width: 300px;
+  min-width: 240px;
+}
+
+.lado_izquierdo .form_error {
+  height: 16px;
+  color: red;
+  font-size: 14px;
+  margin: 0;
+}
+
+.lado_izquierdo #form_correcto {
+  display: inline;
+  color: green;
+  font-size: 14px;
+  margin: 0;
+  display: none;
+}
+
+main .lado_derecho {
+  padding: 20px 50px 50px;
+  height: 80vh;
+}
+
+.lado_derecho img {
+  width: 60%;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  max-width: 400px;
+  min-width: 300px;
+}
+
+.lado_derecho div {
+  padding: 20px 20px 10px;
+}
+
+.lado_derecho div p {
+  font-size: 18px;
+  width: 100%;
+}
+
+.lado_derecho div p i {
+  font-size: 20px;
 }
 
 
@@ -462,48 +396,52 @@ footer .footer_cabecera {
     padding: 5px 10px;
   }
 
+  main {
+    grid-template-columns: 60% 40%;
+    width: 95%;
+  }
+
+  main .lado_izquierdo {
+    padding: 20px;
+  }
+
+  main .lado_derecho {
+    padding: 20px 20px 0;
+  }
+
+  .lado_derecho div p {
+    font-size: 16px;
+    line-height: 16px;
+  }
+
   .footer_informacion {
     grid-template-columns: auto auto;
   }
 }
 
-@media (max-width: 1024px) {
-  .contenedor-principal {
-    grid-template-columns: 1fr;
+@media screen and (max-width: 860px) {
+  main {
+    display: block;
+    height: auto;
   }
 
-  #formulario-filtro {
-    max-height: none;
-    overflow: visible;
-    transition: none;
+  main .lado_izquierdo {
+    height: 100%;
+  }
+
+  main .lado_derecho {
+    position: relative;
+    height: 100%;
+  }
+
+  main .lado_derecho div {
+    padding: 10px 0;
   }
 }
 
 @media screen and (max-width: 780px) {
   .categoriasNav ul li:nth-child(5) {
     display: none;
-  }
-
-  .seccion-filtro {
-    display: block;
-  }
-
-  .seccion-filtro h2{
-    display: none;
-  }
-
-  #toggle-filtro {
-    display: inline-block;
-  }
-
-  #formulario-filtro {
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.3s ease;
-  }
-
-  #toggle-filtro:checked ~ #formulario-filtro {
-    max-height: 1000px;
   }
 
   footer .footer_cabecera {
@@ -563,9 +501,11 @@ footer .footer_cabecera {
     margin: 5px 5px;
   }
 
+  .lado_izquierdo form .form_copia label {
+    font-size: 14px;
+  }
+
   .footer_informacion div {
     width: 100%;
   }
 }
-
-
