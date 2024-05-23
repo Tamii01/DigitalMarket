@@ -1,0 +1,265 @@
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  background-color: rgba(255, 255, 255, 0.434);
+}
+
+/*  ------------------------------- LADO IZQUIERDO -------------------------------- */
+.fondo {
+  border-radius: 20px;
+  background-color: #bac9f3;
+  width: 1560px;
+  height: 860px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  top: 50px;
+  box-shadow: 10px 10px 15px #cbcbcb;
+}
+
+.form {
+  position: relative;
+  bottom: 691px;
+}
+
+#contenedor_contacto {
+  position: relative;
+  left: 30px;
+  top: 130px;
+}
+
+h1 {
+  position: relative;
+  right: 3px;
+  top: 590px;
+  color: rgb(0, 0, 0);
+}
+
+#dudas {
+  position: relative;
+  top: 600px;
+  font-size: 20px;
+}
+
+.select {
+  position: relative;
+  top: 770px;
+}
+
+.campos {
+  position: relative;
+  top: 840px;
+}
+
+.contenedor_nombre {
+  position: relative;
+  bottom: 60px;
+}
+
+.contenedor_email {
+  position: relative;
+  bottom: 50px;
+}
+
+.contenedor_mensaje{
+  position: relative;
+  bottom: 40px;
+}
+
+.titulo {
+  position: relative;
+  left: 30px;
+  color: rgb(0, 0, 0);
+}
+
+#nombre,
+#email,
+#problema {
+  border-radius: 5px;
+  position: relative;
+  left: 30px;
+  width: 50%;
+  height: 40px;
+  border: 1px solid #8b7e7e;
+  padding: 10px;
+}
+
+#comentario {
+  border-radius: 5px;
+  position: relative;
+  left: 30px;
+  width: 50%;
+  resize: none;
+}
+
+
+textarea {
+  width: 300px;
+  height: 150px;
+  padding: 10px;
+  /* Define el padding inicial */
+  border: 1px solid #8b7e7e;
+  border-radius: 4px;
+  font-size: 16px;
+  resize: none;
+  /* Desactiva el redimensionamiento */
+  box-sizing: border-box;
+  /* Asegura que el padding no cambie el tamaño total */
+}
+
+textarea:focus {
+  outline: none;
+  /* Elimina el borde predeterminado del navegador */
+  padding: 10px;
+}
+
+.archivo {
+  position: relative;
+  top: 810px;
+  left: 30px;
+  font-weight: bold;
+}
+
+h2 {
+  color: rgb(0, 0, 0);
+}
+
+.checkbox {
+  position: relative;
+  top: 850px;
+  left: 32px;
+}
+
+.btn {
+  position: relative;
+  top: 860px;
+  left: 30px;
+  border-radius: 15px;
+  padding: 8px 25px;
+  border: none;
+}
+
+.btn:hover {
+  background-color: #0095ff47;
+  cursor: pointer;
+}
+
+.error_nombre {
+  position: relative;
+  width: 500px;
+  height: 25px;
+  text-align: center;
+  margin: auto;
+  color: #ff0000;
+  bottom: 64px;
+  right: 410px;
+  font-size: 15px;
+}
+
+.error_email{
+  position: relative;
+  width: 1000px;
+  height: 25px;
+  text-align: center;
+  margin: auto;
+  color: #ff0000;
+  bottom: 64px;
+  right: 420px;
+  font-size: 15px;
+}
+
+.error_select{
+  position: relative;
+  width: 1000px;
+  height: 25px;
+  text-align: center;
+  margin: auto;
+  color: #ff0000;
+  bottom: 65px;
+  font-size: 15px;
+  right: 200px;
+}
+
+.success_message{
+  position: relative;
+  top: 834px;
+  left: 135px;
+  width: 240px;
+  color: green;
+}
+
+
+/* --------------------------------------- DERECHA ----------------------------------------- */
+img:not(.email, .ubicacion, .telefono) {
+  position: relative;
+  width: 450px;
+  left: 1000px;
+  bottom: 30px;
+}
+
+h4 {
+  position: relative;
+  left: 1070px;
+  bottom: 60px;
+  width: 390px;
+  padding: 4px;
+}
+
+.contactos{
+  position: relative;
+  bottom: 60px;
+}
+
+#telefono{
+  position: relative;
+  bottom: 67px;
+}
+
+.email {
+  position: relative;
+  width: 35px;
+  left: 1020px;
+  bottom: 90px;
+}
+
+.ubicacion {
+  position: relative;
+  width: 35px;
+  left: 1019px;
+  bottom: 110px;
+}
+
+.telefono {
+  position: relative;
+  width: 32px;
+  left: 1022.4px;
+  bottom: 100px;
+}
+
+.horarios {
+  position: relative;
+  top: 220px;
+  left: 1135px;
+  width: 270px;
+  font-size: 20px;
+}
+
+#atencion {
+  font-weight: bold;
+  position: relative;
+  right: 100px;
+  top: 30px;
+}
+
+#dias {
+  position: relative;
+  right: 100px;
+  top: 60px;
+}

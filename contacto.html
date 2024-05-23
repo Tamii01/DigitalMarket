@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de contacto</title>
+    <link rel="stylesheet" href="css/contacto.css">
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Forum&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet" />
+
+</head>
+
+<style>
+    body {
+        background-image: url(images/background.jpeg);
+        background-size: cover;
+    }
+</style>
+
+<body>
+    <form action="" method="POST" id="form">
+        <div class="fondo">
+            <div class="form">
+                <div id="contenedor_contacto">
+                    <h1>¡Contactanos!</h1>
+                    <p id="dudas">Si tienes alguna duda, problema o sugerencia puedes contactarnos dejándonos <br> tu
+                        nombre, email y un mensaje.</p>
+                </div>
+
+                <!------------------------------------------------------------------------->
+                <!-- Select -->
+                <div class="select">
+                    <h2 class="titulo" aria-required="true">Seleccione un tipo de solicitud</h2>
+                    <select name="problema" id="problema">
+                        <label for="problema">Elige un tipo de solicitud</label>
+                        <option value="0">--Elije una opción--</option>
+                        <option value="1">Problemas técnicos con el equipo</option>
+                        <option value="2">Facturación o pago de un equipo</option>
+                        <option value="3">Reembolsos</option>
+                    </select>
+                    <p class="error_select" id="error_select"></p>
+                </div>
+
+                <div class="campos">
+
+                    <!-- CAMPO NOMBRE -->
+                    <div class="contenedor_nombre">
+                        <h2 class="titulo">Tu nombre</h2>
+                        <input type="text" name="nombre" id="nombre" placeholder="Ingrese su nombre">
+                        <p class="error_nombre" id="error_nombre"></p>
+                    </div>
+
+                    <!-- CAMPO EMAIL -->
+                    <div class="contenedor_email">
+                        <h2 class="titulo">Tu email</h2>
+                        <input type="text" name="email" id="email" placeholder="Ingrese su email">
+                        <p class="error_email" id="error_email"></p>
+                    </div>
+
+                    <!-- CAMPO MENSAJE -->
+                    <div class="contenedor_mensaje">
+                        <h2 class="titulo">Tu mensaje</h2>
+                        <textarea name="comentario" id="comentario" cols="30" rows="10"></textarea>
+                    </div>
+                </div>
+
+                <div class="archivo">
+                    <h2>Subir un archivo</h2>
+                    <label for="file-upload">Elige un archivo:</label>
+                    <input type="file" id="file-upload" name="file-upload">
+                    <br><br>
+                </div>
+
+                <div class="checkbox">
+                    <input type="checkbox" name="info" id="info">
+                    <label for="info">Solicitar una copia del mensaje enviado</label>
+                </div>
+                <!-- CAMPO SUBMIT -->
+
+                <button type="submit" class="btn">enviar</button>
+                <p id="success_message" class="success_message"></p>
+
+                <img src="images/contact.png" alt="">
+                <div class="horarios">
+                    <p id="atencion">Horarios de atencion:</p>
+                    <p id="dias">
+                        Lunes a Viernes de 9 a 17hs
+                        Sábados 10 a 12hs
+                    </p>
+                </div>
+
+                <div class="contactos">
+                    <h4>dmrosario1045@gmail.com</h4>
+                    <img src="images/email.png" alt="" class="email">
+                    <h4>Av. Sta. Fe 3253, C1091 Cdad. Autónoma de Buenos Aires</h4>
+                    <img src="images/ubicacion.png" alt="" class="ubicacion">
+                    <h4 id="telefono">+543417470919</h4>
+                    <img src="images/telefono.png" alt="" class="telefono">
+                </div>
+                <!-- Checkbox -->
+
+
+            </div>
+
+        </div>
+    </form>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
