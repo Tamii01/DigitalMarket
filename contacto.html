@@ -43,6 +43,7 @@
                         <option value="2">Facturación o pago de un equipo</option>
                         <option value="3">Reembolsos</option>
                     </select>
+                    <p class="error_select" id="error_select"></p>
                 </div>
 
                 <div class="campos">
@@ -51,16 +52,18 @@
                     <div class="contenedor_nombre">
                         <h2 class="titulo">Tu nombre</h2>
                         <input type="text" name="nombre" id="nombre" placeholder="Ingrese su nombre">
+                        <p class="error_nombre" id="error_nombre"></p>
                     </div>
 
                     <!-- CAMPO EMAIL -->
                     <div class="contenedor_email">
                         <h2 class="titulo">Tu email</h2>
                         <input type="text" name="email" id="email" placeholder="Ingrese su email">
+                        <p class="error_email" id="error_email"></p>
                     </div>
 
                     <!-- CAMPO MENSAJE -->
-                    <div class="contenedor_campo3">
+                    <div class="contenedor_mensaje">
                         <h2 class="titulo">Tu mensaje</h2>
                         <textarea name="comentario" id="comentario" cols="30" rows="10"></textarea>
                     </div>
@@ -80,6 +83,7 @@
                 <!-- CAMPO SUBMIT -->
 
                 <button type="submit" class="btn">enviar</button>
+                <p id="success_message" class="success_message"></p>
 
                 <img src="images/contact.png" alt="">
                 <div class="horarios">
@@ -90,7 +94,7 @@
                     </p>
                 </div>
 
-                <div>
+                <div class="contactos">
                     <h4>dmrosario1045@gmail.com</h4>
                     <img src="images/email.png" alt="" class="email">
                     <h4>Av. Sta. Fe 3253, C1091 Cdad. Autónoma de Buenos Aires</h4>
@@ -99,8 +103,6 @@
                     <img src="images/telefono.png" alt="" class="telefono">
                 </div>
                 <!-- Checkbox -->
-
-                <p class="warnings" id="warnings"></p>
 
 
             </div>

@@ -50,7 +50,7 @@ h1 {
 
 .select {
   position: relative;
-  top: 780px;
+  top: 770px;
 }
 
 .campos {
@@ -60,12 +60,17 @@ h1 {
 
 .contenedor_nombre {
   position: relative;
-  bottom: 40px;
+  bottom: 60px;
 }
 
 .contenedor_email {
   position: relative;
-  bottom: 20px;
+  bottom: 50px;
+}
+
+.contenedor_mensaje{
+  position: relative;
+  bottom: 40px;
 }
 
 .titulo {
@@ -94,6 +99,7 @@ h1 {
   resize: none;
 }
 
+
 textarea {
   width: 300px;
   height: 150px;
@@ -116,7 +122,7 @@ textarea:focus {
 
 .archivo {
   position: relative;
-  top: 850px;
+  top: 810px;
   left: 30px;
   font-weight: bold;
 }
@@ -127,13 +133,13 @@ h2 {
 
 .checkbox {
   position: relative;
-  top: 890px;
+  top: 850px;
   left: 32px;
 }
 
 .btn {
   position: relative;
-  top: 480px;
+  top: 860px;
   left: 30px;
   border-radius: 15px;
   padding: 8px 25px;
@@ -145,27 +151,57 @@ h2 {
   cursor: pointer;
 }
 
-.warnings {
+.error_nombre {
   position: relative;
-  width: 200px;
-  height: 100px;
+  width: 500px;
+  height: 25px;
   text-align: center;
   margin: auto;
   color: #ff0000;
-  padding-top: 20px;
-  top: 140px;
-  right: 500px;
-  font-weight: bold;
+  bottom: 64px;
+  right: 410px;
   font-size: 15px;
-  
 }
+
+.error_email{
+  position: relative;
+  width: 1000px;
+  height: 25px;
+  text-align: center;
+  margin: auto;
+  color: #ff0000;
+  bottom: 64px;
+  right: 420px;
+  font-size: 15px;
+}
+
+.error_select{
+  position: relative;
+  width: 1000px;
+  height: 25px;
+  text-align: center;
+  margin: auto;
+  color: #ff0000;
+  bottom: 65px;
+  font-size: 15px;
+  right: 200px;
+}
+
+.success_message{
+  position: relative;
+  top: 834px;
+  left: 135px;
+  width: 240px;
+  color: green;
+}
+
 
 /* --------------------------------------- DERECHA ----------------------------------------- */
 img:not(.email, .ubicacion, .telefono) {
   position: relative;
   width: 450px;
-  left: 890px;
-  top: 80px;
+  left: 1000px;
+  bottom: 30px;
 }
 
 h4 {
@@ -174,6 +210,11 @@ h4 {
   bottom: 60px;
   width: 390px;
   padding: 4px;
+}
+
+.contactos{
+  position: relative;
+  bottom: 60px;
 }
 
 #telefono{
@@ -204,7 +245,7 @@ h4 {
 
 .horarios {
   position: relative;
-  top: 280px;
+  top: 220px;
   left: 1135px;
   width: 270px;
   font-size: 20px;
