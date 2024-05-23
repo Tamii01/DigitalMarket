@@ -140,36 +140,21 @@ function selectValido(valor) {
 
 function nombreValido(valor) {
     const regexNombre = /^[a-zA-ZáéíóúÁÉÍÓÚñÑ\s]+$/;
-    if (valor === null || valor.trim() === '') {
-        return 'El nombre no debe estar vacío';
-    }
-    else if (valor.length < 3 || valor.length > 20) {
-        return 'El nombre debe contener entre 3 y 20 caracteres';
-    }
-    else if (!regexNombre.test(valor)) {
-        return 'El nombre no debe contener números ni símbolos';
-    }
+    if (valor === null || valor.trim() === '') return 'El nombre no debe estar vacío';
+    else if (valor.length < 3 || valor.length > 20) return 'El nombre debe contener entre 3 y 20 caracteres';
+    else if (!regexNombre.test(valor)) return 'El nombre no debe contener números ni símbolos';
     return "";
 }
 
 function emailValido(valor) {
     const regexEmail = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,4})+$/;
-    if (valor === null || valor.trim() === '') {
-        return 'El email no debe estar vacío';
-    }
-    else if (!regexEmail.test(valor)) {
-        return 'El email no es válido';
-    }
+    if (valor === null || valor.trim() === '') return 'El email no debe estar vacío';
+    else if (!regexEmail.test(valor)) return 'El email no es válido';
     return "";
 }
 
 function mensajeValido(valor) {
-    if (valor === null || valor.trim() === '') {
-        return 'El mensaje no debe estar vacío';
-    }
-    else if (valor.length < 3 || valor.length > 200) {
-        return 'El mensaje debe contener entre 3 y 200 caracteres';
-    }
+    if (valor === null || valor.trim() === '') return 'El mensaje no debe estar vacío';
+    else if (valor.length < 3 || valor.length > 200) return 'El mensaje debe contener entre 3 y 200 caracteres';
     return "";
 }
-

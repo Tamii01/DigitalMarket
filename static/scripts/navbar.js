@@ -1,8 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
 	document.documentElement.style.opacity = '1';
 	handleBusqueda();
-	mostrarBotonUsuario();
-	iniciarCarouselOwl();
 });
 
 function handleBusqueda() {
@@ -64,36 +62,4 @@ function handleBusqueda() {
 		// * Hacer una request al backend
 		// * Redireccionar a /search?term donde se muestren todos los productos que cumplan con la regex
 	});
-}
-
-function mostrarBotonUsuario(){
-	// TODO:
-	// * Chequear si es admin
-	// * Mostrar u ocultar el boton de usuario en la navbar dependiendo si es admin
-}
-
-function iniciarCarouselOwl(){
-	var owl = $(".owl-carousel").owlCarousel({
-		loop: true,
-		margin: 0,
-		nav: false,
-		dots: false,
-		autoplay: true,
-		autoplayTimeout: 3000,
-		slideTransition: "linear",
-		responsive: {
-			0: {
-				items: 1,
-			},
-			700: {
-				items: 2,
-			},
-			1000: {
-				items: 3,
-			},
-			1400: {
-				items: 4,
-			}
-		},
-  });
 }
