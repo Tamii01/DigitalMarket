@@ -1,115 +1,285 @@
 <!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formulario de contacto</title>
-    <link rel="stylesheet" href="css/contacto.css">
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Digital Market | Inicio</title>
+    <!-- Reset -->
+    <link rel="stylesheet" href="./assets/vendor/normalize.css" />
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="./assets/vendor/bootstrap/bootstrap.min.css" />
+    <!-- FontAwesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
     <!-- Google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-        href="https://fonts.googleapis.com/css2?family=Forum&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
-        rel="stylesheet" />
+      href="https://fonts.googleapis.com/css2?family=Forum&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- OWL Carousel -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+    />
 
-</head>
+    <link rel="stylesheet" href="./static/styles/contacto.css" />
+    <link
+      rel="shortcut icon"
+      href="./assets/images/logo_dm.png"
+      type="image/x-icon"
+    />
+  </head>
 
-<style>
-    body {
-        background-image: url(images/background.jpeg);
-        background-size: cover;
-    }
-</style>
+  <body>
+    <nav>
+      <div>
+        <a href="./index.html"
+          ><img src="./assets/images/logo_dm.png" alt="Digital Market"
+        /></a>
+      </div>
+      <div class="categoriasNav">
+        <ul>
+          <li><a href="./categoria.html">Celulares</a></li>
+          <li><a href="./categoria.html">Accesorios</a></li>
+          <li><a href="./categoria.html">Electrodomésticos</a></li>
+          <li><a href="./categoria.html">Computación</a></li>
+          <li><a href="./categoria.html">Tabletas</a></li>
+          <li><a href="./categoria.html">Gaming</a></li>
+          <li><a href="./categoria.html">Audio</a></li>
+          <li><a href="./categoria.html">Todas</a></li>
+        </ul>
+      </div>
+      <div>
+        <ul>
+          <li id="listBusquedaNav">
+            <form method="POST">
+              <button type="submit">
+                <i class="fas fa-arrow-alt-circle-right"></i>
+              </button>
+              <input
+                type="text"
+                name="busquedaNav"
+                id="busquedaNav"
+                placeholder="Buscar..."
+                maxlength="20"
+                minlength="3"
+              />
+              <label for="busquedaNav"><i class="fas fa-search"></i></label>
+            </form>
+          </li>
+          <li><i class="fas fa-shopping-cart"></i></li>
+          <!-- TODO:
+              ! Al apretar en carrito:
+              * mostrar side panel con los items que agrego al carrito
+            -->
+          <li><i class="fas fa-user"></i></li>
+          <!-- TODO:
+              ! Al apretar en usuario:
+              * redireccionar a la pagina de administrador
+            -->
+        </ul>
+      </div>
+    </nav>
 
-<body>
-    <form action="" method="POST" id="form">
-        <div class="fondo">
-            <div class="form">
-                <div id="contenedor_contacto">
-                    <h1>¡Contactanos!</h1>
-                    <p id="dudas">Si tienes alguna duda, problema o sugerencia puedes contactarnos dejándonos <br> tu
-                        nombre, email y un mensaje.</p>
-                </div>
-
-                <!------------------------------------------------------------------------->
-                <!-- Select -->
-                <div class="select">
-                    <h2 class="titulo" aria-required="true">Seleccione un tipo de solicitud</h2>
-                    <select name="problema" id="problema">
-                        <label for="problema">Elige un tipo de solicitud</label>
-                        <option value="0">--Elije una opción--</option>
-                        <option value="1">Problemas técnicos con el equipo</option>
-                        <option value="2">Facturación o pago de un equipo</option>
-                        <option value="3">Reembolsos</option>
-                    </select>
-                    <p class="error_select" id="error_select"></p>
-                </div>
-
-                <div class="campos">
-
-                    <!-- CAMPO NOMBRE -->
-                    <div class="contenedor_nombre">
-                        <h2 class="titulo">Tu nombre</h2>
-                        <input type="text" name="nombre" id="nombre" placeholder="Ingrese su nombre">
-                        <p class="error_nombre" id="error_nombre"></p>
-                    </div>
-
-                    <!-- CAMPO EMAIL -->
-                    <div class="contenedor_email">
-                        <h2 class="titulo">Tu email</h2>
-                        <input type="text" name="email" id="email" placeholder="Ingrese su email">
-                        <p class="error_email" id="error_email"></p>
-                    </div>
-
-                    <!-- CAMPO MENSAJE -->
-                    <div class="contenedor_mensaje">
-                        <h2 class="titulo">Tu mensaje</h2>
-                        <textarea name="comentario" id="comentario" cols="30" rows="10"></textarea>
-                    </div>
-                </div>
-
-                <div class="archivo">
-                    <h2>Subir un archivo</h2>
-                    <label for="file-upload">Elige un archivo:</label>
-                    <input type="file" id="file-upload" name="file-upload">
-                    <br><br>
-                </div>
-
-                <div class="checkbox">
-                    <input type="checkbox" name="info" id="info">
-                    <label for="info">Solicitar una copia del mensaje enviado</label>
-                </div>
-                <!-- CAMPO SUBMIT -->
-
-                <button type="submit" class="btn">enviar</button>
-                <p id="success_message" class="success_message"></p>
-
-                <img src="images/contact.png" alt="">
-                <div class="horarios">
-                    <p id="atencion">Horarios de atencion:</p>
-                    <p id="dias">
-                        Lunes a Viernes de 9 a 17hs
-                        Sábados 10 a 12hs
-                    </p>
-                </div>
-
-                <div class="contactos">
-                    <h4>dmrosario1045@gmail.com</h4>
-                    <img src="images/email.png" alt="" class="email">
-                    <h4>Av. Sta. Fe 3253, C1091 Cdad. Autónoma de Buenos Aires</h4>
-                    <img src="images/ubicacion.png" alt="" class="ubicacion">
-                    <h4 id="telefono">+543417470919</h4>
-                    <img src="images/telefono.png" alt="" class="telefono">
-                </div>
-                <!-- Checkbox -->
-
-
-            </div>
-
+    <main>
+      <section class="lado_izquierdo">
+        <div class="form_cabecera">
+          <h1>¡Contáctanos!</h1>
+          <p>
+            Si tienes alguna duda, problema o sugerencia puedes contactarnos
+            dejándonos tu nombre, email y un mensaje.
+          </p>
         </div>
-    </form>
-    <script src="js/script.js"></script>
-</body>
 
+        <form action="#" method="POST" id="form_contacto">
+          <div class="form_select">
+            <label for="form_select">Seleccione un tipo de solicitud</label>
+            <select name="problema" id="form_select">
+              <option value="0">--Elige una opción--</option>
+              <option value="1">Problemas técnicos con el equipo</option>
+              <option value="2">Facturación o pago de un equipo</option>
+              <option value="3">Reembolsos</option>
+            </select>
+            <p class="form_error" id="error_select"></p>
+          </div>
+
+          <div class="form_nombre">
+            <label for="form_nombre">Tu nombre</label>
+            <input
+              type="text"
+              name="nombre"
+              id="form_nombre"
+              placeholder="Ingrese su nombre"
+            />
+            <p class="form_error" id="error_nombre"></p>
+          </div>
+
+          <div class="form_email">
+            <label for="form_email">Tu email</label>
+            <input
+              type="email"
+              name="email"
+              id="form_email"
+              placeholder="Ingrese su email"
+            />
+            <p class="form_error" id="error_email"></p>
+          </div>
+
+          <div class="form_mensaje">
+            <label for="form_mensaje">Tu mensaje</label>
+            <textarea
+              name="mensaje"
+              id="form_mensaje"
+              cols="30"
+              rows="10"
+            ></textarea>
+            <p class="form_error" id="error_mensaje"></p>
+          </div>
+
+          <div class="form_archivo">
+            <label for="form_archivo">Adjuntar una imagen</label>
+            <input
+              type="file"
+              name="archivo"
+              id="form_archivo"
+              accept="image/*"
+            />
+            <p class="form_error" id="error_archivo"></p>
+          </div>
+
+          <div class="form_copia">
+            <input type="checkbox" name="copia" id="form_copia" />
+            <label for="form_copia"
+              >Recibir una copia del mensaje enviado</label
+            >
+          </div>
+
+          <button type="submit">Enviar</button>
+
+          <p id="mensaje_correcto">Mensaje enviado exitosamente</p>
+        </form>
+      </section>
+
+      <section class="lado_derecho">
+        <img src="./assets/images/contact.png" alt="Soporte técnico" />
+        <div>
+          <p>
+            Horarios de atencion:<br />Lunes a Viernes de 9 a 17hs<br />Sábados
+            10 a 12hs
+          </p>
+        </div>
+
+        <div>
+          <p><i class="fas fa-envelope"></i> dmrosario1045@gmail.com</p>
+          <p>
+            <i class="fa-solid fa-location-dot"></i> Av. Sta. Fe 3253, C1091
+            Cdad. Autónoma de Buenos Aires
+          </p>
+          <p><i class="fa-solid fa-phone"></i> +543417470919</p>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <section class="footer_cabecera">
+        <div>
+          <a href="./index.html"
+            ><img src="./assets/images/logo dm.png" alt="Logo Digital Market"
+          /></a>
+        </div>
+        <div class="footer_social">
+          <ul>
+            <li>
+              <a
+                href="https://www.instagram.com/digitalmarketxxi"
+                target="_blank"
+                ><i class="fa-brands fa-instagram"></i> digitalmarketxxi
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.facebook.com/digitalmarketxxi"
+                target="_blank"
+                ><i class="fa-brands fa-facebook"></i> digitalmarketxxi
+              </a>
+            </li>
+            <li>
+              <a href="https://wa.link/0r3gmg" target="whatsapp"
+                ><i class="fa-brands fa-whatsapp"></i> +543417470919
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer_suscripcion">
+          <form action="#" method="POST">
+            <label for="footer_email">Recibí ofertas y promociones</label>
+            <div>
+              <input
+                type="email"
+                name="email"
+                id="footer_email"
+                placeholder="Ingresá tu email"
+                required
+              />
+              <button type="submit">
+                <i class="fa-solid fa-share-from-square"></i>
+              </button>
+            </div>
+          </form>
+        </div>
+      </section>
+
+      <hr />
+
+      <section class="footer_informacion">
+        <div>
+          <h4>Horarios de atención</h4>
+          <p>
+            Lunes a Viernes de 9 a 17hs<br />Sábados de 10 a 12hs<br /><a
+              href="mailto:dmrosario1045@gmail.com"
+              >dmrosario1045@gmail.com</a
+            >
+          </p>
+        </div>
+        <div>
+          <h4>Comprar en Digital Market</h4>
+          <ul>
+            <li><a href="#">Servicio técnico</a></li>
+            <li><a href="#">Política de privacidad</a></li>
+            <li><a href="#">Botón de arrepentimiento</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Recomendados</h4>
+          <ul>
+            <li><a href="#">Samsung</a></li>
+            <li><a href="#">iPhone</a></li>
+            <li><a href="#">Motorola</a></li>
+            <li><a href="#">Xiaomi</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Ayuda</h4>
+          <ul>
+            <li><a href="#">Contactanos</a></li>
+            <li><a href="#">Dirección de showroom</a></li>
+            <li><a href="#">Vendé en Digital Market</a></li>
+            <li><a href="#">Trabajá con nosotros</a></li>
+          </ul>
+        </div>
+      </section>
+    </footer>
+
+    <script src="./static/scripts/script.js"></script>
+    <script src="./static/scripts/contacto.js"></script>
+  </body>
 </html>

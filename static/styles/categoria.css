@@ -3,6 +3,7 @@ body {
   font-family: "Montserrat", sans-serif;
   margin: 200;
   padding: 200;
+  overflow-x: hidden;
 }
 
 nav {

@@ -1,265 +1,505 @@
-
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Montserrat", sans-serif;
-}
-
 body {
-  background-color: rgba(255, 255, 255, 0.434);
+  background-color: #000;
 }
 
-/*  ------------------------------- LADO IZQUIERDO -------------------------------- */
-.fondo {
-  border-radius: 20px;
-  background-color: #bac9f3;
-  width: 1560px;
-  height: 860px;
-  margin-left: auto;
-  margin-right: auto;
-  position: relative;
-  top: 50px;
-  box-shadow: 10px 10px 15px #cbcbcb;
+nav {
+	width: 100vw;
+	background-color: #000;
+	color: #fff;
+	display: grid;
+	grid-template-columns: 100px calc(100% - 200px - 100px) 200px;
+	justify-content: space-between;
+	box-sizing: border-box;
+	padding: 0 20px;
+	height: 100px;
+	font-family: "Montserrat", sans-serif;
 }
 
-.form {
-  position: relative;
-  bottom: 691px;
+nav div ul {
+	padding: 0;
+	margin: 0;
+	height: 100px;
+	text-align: center;
 }
 
-#contenedor_contacto {
-  position: relative;
-  left: 30px;
-  top: 130px;
+nav div img {
+	width: 90px;
+	height: 70px;
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
 }
 
-h1 {
-  position: relative;
-  right: 3px;
-  top: 590px;
-  color: rgb(0, 0, 0);
+nav div ul li {
+	display: inline-block;
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
 }
 
-#dudas {
-  position: relative;
-  top: 600px;
-  font-size: 20px;
+nav div ul li a {
+	text-decoration: none;
+	font-size: 14px;
+	color: #fff;
+	padding: 5px 30px;
+	text-transform: uppercase;
+  transition: color 0.3s ease;
 }
 
-.select {
-  position: relative;
-  top: 770px;
+nav div ul li a:hover {
+  color: #00add5;
 }
 
-.campos {
-  position: relative;
-  top: 840px;
+nav div ul li i {
+	font-size: 24px;
+	color: #fff;
+	text-decoration: none;
+	margin: 5px 15px;
+  transition: color 0.3s ease, transform 0.5s ease;
 }
 
-.contenedor_nombre {
-  position: relative;
-  bottom: 60px;
-}
-
-.contenedor_email {
-  position: relative;
-  bottom: 50px;
-}
-
-.contenedor_mensaje{
-  position: relative;
-  bottom: 40px;
-}
-
-.titulo {
-  position: relative;
-  left: 30px;
-  color: rgb(0, 0, 0);
-}
-
-#nombre,
-#email,
-#problema {
-  border-radius: 5px;
-  position: relative;
-  left: 30px;
-  width: 50%;
-  height: 40px;
-  border: 1px solid #8b7e7e;
-  padding: 10px;
-}
-
-#comentario {
-  border-radius: 5px;
-  position: relative;
-  left: 30px;
-  width: 50%;
-  resize: none;
-}
-
-
-textarea {
-  width: 300px;
-  height: 150px;
-  padding: 10px;
-  /* Define el padding inicial */
-  border: 1px solid #8b7e7e;
-  border-radius: 4px;
-  font-size: 16px;
-  resize: none;
-  /* Desactiva el redimensionamiento */
-  box-sizing: border-box;
-  /* Asegura que el padding no cambie el tamaño total */
-}
-
-textarea:focus {
-  outline: none;
-  /* Elimina el borde predeterminado del navegador */
-  padding: 10px;
-}
-
-.archivo {
-  position: relative;
-  top: 810px;
-  left: 30px;
-  font-weight: bold;
-}
-
-h2 {
-  color: rgb(0, 0, 0);
-}
-
-.checkbox {
-  position: relative;
-  top: 850px;
-  left: 32px;
-}
-
-.btn {
-  position: relative;
-  top: 860px;
-  left: 30px;
-  border-radius: 15px;
-  padding: 8px 25px;
-  border: none;
-}
-
-.btn:hover {
-  background-color: #0095ff47;
+nav div ul li i:hover {
+  color: #00add5;
   cursor: pointer;
 }
 
-.error_nombre {
-  position: relative;
-  width: 500px;
-  height: 25px;
-  text-align: center;
-  margin: auto;
-  color: #ff0000;
-  bottom: 64px;
-  right: 410px;
-  font-size: 15px;
+#listBusquedaNav input {
+	width: 100%;
+	height: 32px;
+	box-sizing: border-box;
+	padding: 5px;
+	font-size: 16px;
+	display: none;
+	font-family: inter, sans-serif;
+  transition: opacity 1s ease;
+  opacity: 0;
 }
 
-.error_email{
-  position: relative;
-  width: 1000px;
-  height: 25px;
-  text-align: center;
-  margin: auto;
-  color: #ff0000;
-  bottom: 64px;
-  right: 420px;
-  font-size: 15px;
+#listBusquedaNav label {
+	cursor: pointer;
 }
 
-.error_select{
-  position: relative;
-  width: 1000px;
-  height: 25px;
-  text-align: center;
-  margin: auto;
-  color: #ff0000;
-  bottom: 65px;
-  font-size: 15px;
-  right: 200px;
+#listBusquedaNav button {
+	width: 24px;
+	height: 24px;
+	cursor: pointer;
+	position: absolute;
+	right: 10px;
+	top: 2px;
+	background: none;
+	border: none;
+	display: none;
+  z-index: 2;
+  transition: opacity 1.5s ease;
+  opacity: 0;
 }
 
-.success_message{
+#listBusquedaNav button i {
+	margin: 0;
+	background-color: #000;
+	border: 1px solid #000;
+	border-radius: 15px;
+}
+
+
+
+main {
+  border-radius: 20px;
+  font-family: "Montserrat", sans-serif;
+  background: linear-gradient(to right, #bac9f3, #9baad4);
+  width: 80vw;
+  height: 700px;
   position: relative;
-  top: 834px;
-  left: 135px;
-  width: 240px;
+  left: 50%;
+  transform: translateX(-50%);
+  box-shadow: 10px 10px 15px #cbcbcb;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  color: #000;
+  overflow: hidden;
+  max-width: 1400px;
+}
+
+main .lado_izquierdo {
+  position: relative;
+  padding: 20px 50px 50px;
+  height: 80vh;
+}
+
+.lado_izquierdo .form_cabecera h1 {
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.lado_izquierdo form label:not(label[for="form_copia"]) {
+  display: block;
+  width: 100%;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.lado_izquierdo form input:not(input[type="file"], input[type="checkbox"]), .lado_izquierdo form textarea {
+  font-size: 16px;
+  padding: 5px;
+  width: 100%;
+  border-radius: 5px;
+  height: 40px;
+  border: 1px solid #8b7e7e;
+}
+
+.lado_izquierdo form textarea {
+  height: 90px;
+  resize: none;
+  box-sizing: border-box;
+}
+
+.lado_izquierdo form .form_copia {
+  padding-bottom: 10px;
+}
+
+.lado_izquierdo form button {
+  border: 1px solid #000;
+  color: #fff;
+  background-color: #007a99;
+  padding: 10px;
+  border-radius: 10px;
+  width: 100px;
+  font-weight: 700;
+}
+
+.lado_izquierdo form button:hover {
+  background-color: #0066ff;
+}
+
+.lado_izquierdo #form_select {
+  width: 100%;
+  max-width: 300px;
+  min-width: 240px;
+}
+
+.lado_izquierdo .form_error {
+  height: 16px;
+  color: red;
+  font-size: 14px;
+  margin: 0;
+}
+
+.lado_izquierdo #mensaje_correcto {
+  display: inline;
   color: green;
+  font-size: 14px;
+  margin: 0;
+  display: none;
 }
 
-
-/* --------------------------------------- DERECHA ----------------------------------------- */
-img:not(.email, .ubicacion, .telefono) {
-  position: relative;
-  width: 450px;
-  left: 1000px;
-  bottom: 30px;
+main .lado_derecho {
+  padding: 20px 50px 50px;
+  height: 80vh;
 }
 
-h4 {
+.lado_derecho img {
+  width: 60%;
   position: relative;
-  left: 1070px;
-  bottom: 60px;
-  width: 390px;
-  padding: 4px;
+  left: 50%;
+  transform: translateX(-50%);
+  max-width: 400px;
+  min-width: 300px;
 }
 
-.contactos{
-  position: relative;
-  bottom: 60px;
+.lado_derecho div {
+  padding: 20px 20px 10px;
 }
 
-#telefono{
-  position: relative;
-  bottom: 67px;
+.lado_derecho div p {
+  font-size: 18px;
+  width: 100%;
 }
 
-.email {
-  position: relative;
-  width: 35px;
-  left: 1020px;
-  bottom: 90px;
-}
-
-.ubicacion {
-  position: relative;
-  width: 35px;
-  left: 1019px;
-  bottom: 110px;
-}
-
-.telefono {
-  position: relative;
-  width: 32px;
-  left: 1022.4px;
-  bottom: 100px;
-}
-
-.horarios {
-  position: relative;
-  top: 220px;
-  left: 1135px;
-  width: 270px;
+.lado_derecho div p i {
   font-size: 20px;
 }
 
-#atencion {
-  font-weight: bold;
+
+
+footer {
+  font-family: "Montserrat", sans-serif;
+  background-color: #000000;
+  color: #ffffff;
   position: relative;
-  right: 100px;
-  top: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 40px;
+  margin-top: 40px;
+  width: 95vw;
+  border-top: 5px solid #fff;
 }
 
-#dias {
+footer ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+footer a {
+  color: #ffffff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+footer a:hover {
+  color: #00add5;
+}
+
+footer .footer_cabecera {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  max-width: 1400px;
   position: relative;
-  right: 100px;
-  top: 60px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.footer_cabecera img {
+  width: 150px;
+  height: 120px;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.footer_social li {
+  padding: 5px;
+  font-size: 18px;
+  text-align: center;
+}
+
+.footer_social li:last-child {
+  margin-right: 15px;
+}
+
+.footer_social li i {
+  font-size: 22px;
+  margin-right: 5px;
+}
+
+.footer_suscripcion {
+  position: relative;
+  text-align: center;
+}
+
+.footer_suscripcion label {
+  font-size: 18px;
+  display: block;
+  margin: 10px 0;
+}
+
+.footer_suscripcion div {
+  position: relative;
+  width: 270px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.footer_suscripcion div input {
+  position: relative;
+  font-size: 18px;
+  width: 245px;
+  height: 40px;
+  padding: 10px;
+  margin-right: 15px;
+  border-radius: 5px;
+  border: none;
+}
+
+.footer_suscripcion div button {
+  position: absolute;
+  top: 0;
+  right: -10px;
+  background-color: #fff;
+  color: #00add5;
+  border: none;
+  transition: color 0.3s ease;
+  width: 35px;
+  height: 40px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+/* don't ask, just praise chatgpt */
+.footer_suscripcion div input:focus, .footer_suscripcion div input:focus + button {
+  outline: none;
+  border-bottom: 2px solid #00add5;
+  border-top: 2px solid #00add5;
+}
+
+.footer_suscripcion div button:hover {
+  color: #007a99;
+}
+
+.footer_informacion {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  font-size: 18px;
+  margin-top: 30px;
+  max-width: 1400px;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.footer_informacion div h4 {
+  color: #00add5;
+  font-weight: 700;
+  font-size: 22px;
+}
+
+.footer_informacion div ul li {
+  text-decoration: underline;
+  color: #007a99;
+}
+
+
+/* ! Estas MQ para hacer la nav responsiva son temporales
+  * Cuando obtengamos las categorias del backend se va a calcular
+  * cuantas entran en el ancho de la pantalla y va haber un listener
+  * para el evento de resize
+*/
+@media screen and (max-width: 1600px) {
+  .categoriasNav ul li:nth-child(1) {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1460px) {
+  .categoriasNav ul li:nth-child(2) {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  .categoriasNav ul li:nth-child(3) {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .categoriasNav ul li:nth-child(4) {
+    display: none;
+  }
+
+  .categoriasNav ul li a {
+    padding: 5px 10px;
+  }
+
+  main {
+    grid-template-columns: 60% 40%;
+    width: 95%;
+  }
+
+  main .lado_izquierdo {
+    padding: 20px;
+  }
+
+  main .lado_derecho {
+    padding: 20px 20px 0;
+  }
+
+  .lado_derecho div p {
+    font-size: 16px;
+    line-height: 16px;
+  }
+
+  .footer_informacion {
+    grid-template-columns: auto auto;
+  }
+}
+
+@media screen and (max-width: 860px) {
+  main {
+    display: block;
+    height: auto;
+  }
+
+  main .lado_izquierdo {
+    height: 100%;
+  }
+
+  main .lado_derecho {
+    position: relative;
+    height: 100%;
+  }
+
+  main .lado_derecho div {
+    padding: 10px 0;
+  }
+}
+
+@media screen and (max-width: 780px) {
+  .categoriasNav ul li:nth-child(5) {
+    display: none;
+  }
+
+  footer .footer_cabecera {
+    grid-template-columns: auto auto;
+  }
+
+  .footer_cabecera div:first-child {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 670px) {
+  .categoriasNav ul li:nth-child(6) {
+    display: none;
+  }
+
+  .categoriasNav ul li a {
+    padding: 5px 5px;
+  }
+
+  .footer_informacion {
+    display: block;
+  }
+
+  .footer_informacion div {
+    width: 50%;
+    display: inline-block;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 15px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  footer .footer_cabecera {
+    display: block;
+  }
+  .footer_suscripcion {
+    margin-top: 20px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .categoriasNav ul li:nth-child(7) {
+    display: none;
+  }
+
+  nav {
+	  grid-template-columns: 50px calc(100% - 200px - 100px) 130px;
+  }
+
+  nav div ul li i {
+    margin: 5px 5px;
+  }
+
+  .lado_izquierdo form .form_copia label {
+    font-size: 14px;
+  }
+
+  .footer_informacion div {
+    width: 100%;
+  }
 }
