@@ -1,70 +1,175 @@
 document.addEventListener('DOMContentLoaded', () => {
-    manageForm()
+    const form = document.getElementById("form_contacto");
+    form.addEventListener("submit", (e) => validarCampos(e, form));
 });
 
-function manageForm(){
-    const nombre = document.getElementById("form_nombre")
-    const email = document.getElementById("form_email")
+function validarCampos(e, form){
+    e.preventDefault();
 
-    const form = document.getElementById("form_contacto")
-    const error_nombre = document.getElementById("error_nombre")
-    const error_email = document.getElementById("error_email")
-    const error_select = document.getElementById("error_select")
-    const success_message = document.getElementById("success_message")
+    const formCorrecto  = document.getElementById("form_correcto");
 
-    form.addEventListener("submit", e => {
-        e.preventDefault()
-        let warning_nombre = ""
-        let warning_email = ""
-        let warning_select = ""
-        let entrar = false
-        let regexEmail = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,4})+$/;
-        let regexNombre = /^[a-zA-ZáéíóúÁÉÍÓÚñÑ\s]+$/;
-        error_nombre.innerHTML = ""
-        error_email.innerHTML = ""
-        error_select.innerHTML = ""
-        success_message.innerHTML = ""
+    const selectValor   = document.getElementById("form_select").value;
+    const nombreValor   = document.getElementById("form_nombre").value;
+    const emailValor    = document.getElementById("form_email").value;
+    const mensajeValor  = document.getElementById("form_mensaje").value;
 
-        if (problema.value === "0") {
-            warning_select += `Debe seleccionar un tipo de solicitud`
-            entrar = true
-        }
+    if(!selectValido(selectValor)) {
+        mostrarErrorSelect();
+        return;
+    }
 
-        if (nombre.value === null || nombre.value.trim() === '') {
-            warning_nombre += `El campo nombre no debe estar vacío`
-            entrar = true
-        }
-        else if (nombre.value.length <= 2) {
-            warning_nombre += `El nombre es muy corto`
-            entrar = true
-        }
-        else if (!regexNombre.test(nombre.value)) {
-            warning_nombre += `El nombre no debe contener números ni símbolos`
-            entrar = true
-        }
+    const errorNombre = nombreValido(nombreValor);
+    if(errorNombre.length != 0) {
+        mostrarErrorNombre(errorNombre);
+        return;
+    }
+    const errorEmail = emailValido(emailValor);
+    if(errorEmail.length != 0) {
+        mostrarErrorEmail(errorEmail);
+        return;
+    }
+    const errorMensaje = mensajeValido(mensajeValor);
+    if(errorMensaje.length != 0) {
+        mostrarErrorMensaje(errorMensaje);
+        return;
+    }
 
-        if (email.value === null || email.value.trim() === '') {
-            warning_email += `El campo email no debe estar vacío`
-            entrar = true
-        }
+    formCorrecto.style.display = 'inline-block';
+    setTimeout(() => {
+        formCorrecto.style.display = 'none';
+    }, 5000);
+    form.reset();
+};
 
-        else if (!regexEmail.test(email.value)) {
-            warning_email += `El email no es válido`
-            entrar = true
-        }
+let selectListening, nombreListening, emailListening, mensajeListening = false;
 
+function mostrarErrorSelect() {
+    const selectElem = document.getElementById("form_select");
+    const selectError = document.getElementById("error_select");
 
-        if (entrar) {
-            error_nombre.innerHTML = warning_nombre
-            error_email.innerHTML = warning_email
-            error_select.innerHTML = warning_select
-        } else {
-            success_message.innerHTML = "Formulario enviado con éxito"
-            setTimeout(() => {
-                success_message.innerHTML = "";
-            }, 5000);
-            form.reset();
-        }
+    selectElem.style.outline = 'dotted red';
+    selectError.innerHTML = 'Esta opción no es válida';
 
-    })
+    if(!selectListening){
+        selectListening = true;
+        selectElem.addEventListener('change', handleSelectChange);
+    }
 }
+function handleSelectChange() {
+    const selectElem = document.getElementById("form_select");
+    const selectError = document.getElementById("error_select");
+    const selectValor = selectElem.value;
+
+    if(selectValido(selectValor)){
+        selectElem.style.outline = 'none';
+        selectError.innerHTML = '';
+        selectElem.removeEventListener('change', handleSelectChange);
+        selectListening = false;
+    }
+}
+
+function mostrarErrorNombre(errorNombre) {
+    const nombreElem = document.getElementById("form_nombre");
+    const nombreError = document.getElementById("error_nombre");
+
+    nombreElem.style.outline = 'dotted red';
+    nombreError.innerHTML = errorNombre;
+
+    if(!nombreListening){
+        nombreListening = true;
+        nombreElem.addEventListener('change', handleNombreChange);
+    }
+}
+function handleNombreChange() {
+    const nombreElem = document.getElementById("form_nombre");
+    const nombreError = document.getElementById("error_nombre");
+
+    nombreElem.style.outline = 'none';
+    nombreError.innerHTML = '';
+    nombreElem.removeEventListener('change', handleNombreChange);
+    nombreListening = false;
+}
+
+function mostrarErrorEmail(errorEmail) {
+    const emailElem = document.getElementById("form_email");
+    const emailError = document.getElementById("error_email");
+
+    emailElem.style.outline = 'dotted red';
+    emailError.innerHTML = errorEmail;
+
+    if(!emailListening){
+        emailListening = true;
+        emailElem.addEventListener('change', handleEmailChange);
+    }
+}
+function handleEmailChange() {
+    const emailElem = document.getElementById("form_email");
+    const emailError = document.getElementById("error_email");
+
+    emailElem.style.outline = 'none';
+    emailError.innerHTML = '';
+    emailElem.removeEventListener('change', handleEmailChange);
+    emailListening = false;
+}
+
+function mostrarErrorMensaje(errorMensaje) {
+    const mensajeElem = document.getElementById("form_mensaje");
+    const mensajeError = document.getElementById("error_mensaje");
+
+    mensajeElem.style.outline = 'dotted red';
+    mensajeError.innerHTML = errorMensaje;
+
+    if(!mensajeListening){
+        mensajeListening = true;
+        mensajeElem.addEventListener('change', handleMensajeChange);
+    }
+}
+function handleMensajeChange() {
+    const mensajeElem = document.getElementById("form_mensaje");
+    const mensajeError = document.getElementById("error_mensaje");
+
+    mensajeElem.style.outline = 'none';
+    mensajeError.innerHTML = '';
+    mensajeElem.removeEventListener('change', handleMensajeChange);
+    mensajeListening = false;
+}
+
+function selectValido(valor) {
+    return valor > 0 && valor < 4;
+}
+
+function nombreValido(valor) {
+    const regexNombre = /^[a-zA-ZáéíóúÁÉÍÓÚñÑ\s]+$/;
+    if (valor === null || valor.trim() === '') {
+        return 'El nombre no debe estar vacío';
+    }
+    else if (valor.length < 3 || valor.length > 20) {
+        return 'El nombre debe contener entre 3 y 20 caracteres';
+    }
+    else if (!regexNombre.test(valor)) {
+        return 'El nombre no debe contener números ni símbolos';
+    }
+    return "";
+}
+
+function emailValido(valor) {
+    const regexEmail = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,4})+$/;
+    if (valor === null || valor.trim() === '') {
+        return 'El email no debe estar vacío';
+    }
+    else if (!regexEmail.test(valor)) {
+        return 'El email no es válido';
+    }
+    return "";
+}
+
+function mensajeValido(valor) {
+    if (valor === null || valor.trim() === '') {
+        return 'El mensaje no debe estar vacío';
+    }
+    else if (valor.length < 3 || valor.length > 200) {
+        return 'El mensaje debe contener entre 3 y 200 caracteres';
+    }
+    return "";
+}
+

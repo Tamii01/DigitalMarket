@@ -1,5 +1,6 @@
 body {
   background-color: #000;
+  overflow-x: hidden;
 }
 
 nav {
@@ -154,7 +155,7 @@ main .lado_izquierdo {
 }
 
 .lado_izquierdo form .form_copia {
-  padding-bottom: 10px;
+  padding: 10px 0;
 }
 
 .lado_izquierdo form button {
@@ -184,7 +185,7 @@ main .lado_izquierdo {
   margin: 0;
 }
 
-.lado_izquierdo #mensaje_correcto {
+.lado_izquierdo #form_correcto {
   display: inline;
   color: green;
   font-size: 14px;
