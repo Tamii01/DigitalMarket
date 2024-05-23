@@ -1,5 +1,14 @@
 # Digital Market
+
 Es una aplicación web de e-commerce diseñada para la empresa "Digital Market" que se especializa en ventas de productos tecnologicos. Este proyecto actualmente está en desarrollo y solo cuenta con el Front End. La plataforma tiene como objetivo proporcionar una experiencia de usuario fluida y atractiva, permitiendo a los clientes navegar, buscar y comprar de manera eficiente y segura. El diseño se centra en la usabilidad y accesibilidad, asegurando que los usuarios puedan encontrar fácilmente lo que buscan y realizar sus compras con confianza.
+
+## Equipo de Desarrollo
+
+- **Lautaro Colella**   [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=flat&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/lautaro-colella/) [![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/LautaroColella)
+- **Tamara Pucheta**    [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=flat&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/tamara-pucheta/) [![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Tamii01)
+- **Barbara Retondale** [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=flat&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/barbiretondale/) [![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/barbiretondale)
+- **Mauro Caballero**   [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=flat&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/mauro-caballero-671782a5/) [![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/MauroC9212)
+
 ## Tecnologías Utilizadas
 
 - ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
@@ -9,25 +18,17 @@ Es una aplicación web de e-commerce diseñada para la empresa "Digital Market" 
 - ![jQuery](https://img.shields.io/badge/jQuery-0769AD?style=for-the-badge&logo=jquery&logoColor=white)
 - ![OWL Carousel](https://img.shields.io/badge/OWL_Carousel-9B59B6?style=for-the-badge&logo=owlcarousel&logoColor=white)
 
-
-## Equipo de Desarrollo
-
-- **Lautaro Colella**   [![LinkedIn](https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/LinkedIn_icon.svg/1200px-LinkedIn_icon.svg.png)](https://www.linkedin.com/in/lautaro-colella/) [![GitHub](https://cdn-icons-png.flaticon.com/512/25/25231.png)](https://github.com/LautaroColella)
-- **Tamara Pucheta**    [![LinkedIn](https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/LinkedIn_icon.svg/1200px-LinkedIn_icon.svg.png)](https://www.linkedin.com/in/tamara-pucheta/) [![GitHub](https://cdn-icons-png.flaticon.com/512/25/25231.png)](https://github.com/Tamii01)
-- **Barbara Retondale** [![LinkedIn](https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/LinkedIn_icon.svg/1200px-LinkedIn_icon.svg.png)](https://www.linkedin.com/in/barbiretondale/) [![GitHub](https://cdn-icons-png.flaticon.com/512/25/25231.png)](https://github.com/barbiretondale)
-- **Mauro Caballero**   [![LinkedIn](https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/LinkedIn_icon.svg/1200px-LinkedIn_icon.svg.png)](https://www.linkedin.com/in/mauro-caballero-671782a5/) [![GitHub](https://cdn-icons-png.flaticon.com/512/25/25231.png)](https://github.com/MauroC9212)
-
-
 ## Diseño del Proyecto
 
 ### Figma
+
 Puedes ver el diseño y prototipos del proyecto en:
 [Proyecto en Figma](https://www.figma.com/design/yxorc0i439v6PCfEOWzOtm/proyecto-codo-a-codo?node-id=0%3A1&t=4DAxIn7usVC3GJfJ-1)
 
 ### Trello
+
 Puedes ver el seguimiento de tareas y flujo de trabajo del proyecto en:
 [Tablero en Trello](https://trello.com/b/RDptkNcD/digital-market)
-
 
 ## Cómo Empezar
 
@@ -41,8 +42,8 @@ Para clonar y ejecutar este proyecto, sigue estos pasos:
 
 3. Abre el archivo index.html en tu navegador para ver la aplicación.
 
+## Licencia
 
-# Licencia
 Este proyecto está bajo la Licencia MIT.
 
 ### Copyright 2024 Digital Market
