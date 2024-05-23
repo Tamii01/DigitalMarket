@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Samsung | Categoria Digital Market</title>
+    <!-- Reset -->
+    <link rel="stylesheet" href="./assets/vendor/normalize.css" />
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="./assets/vendor/bootstrap/bootstrap.min.css" />
+    <!-- FontAwesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Forum&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./static/styles/categoria.css" />
+    <link
+      rel="shortcut icon"
+      href="./assets/images/logo_dm.png"
+      type="image/x-icon"
+    />
+  </head>
+  <body>
+    <nav>
+      <div>
+        <a href="./index.html"
+          ><img src="./assets/images/logo_dm.png" alt="Digital Market"
+        /></a>
+      </div>
+      <div class="categoriasNav">
+        <ul>
+          <li><a href="./categoria.html">Celulares</a></li>
+          <li><a href="./categoria.html">Accesorios</a></li>
+          <li><a href="./categoria.html">Electrodomésticos</a></li>
+          <li><a href="./categoria.html">Computación</a></li>
+          <li><a href="./categoria.html">Tabletas</a></li>
+          <li><a href="./categoria.html">Gaming</a></li>
+          <li><a href="./categoria.html">Audio</a></li>
+          <li><a href="./categoria.html">Todas</a></li>
+        </ul>
+      </div>
+      <div>
+        <ul>
+          <li id="listBusquedaNav">
+            <form method="POST">
+              <button type="submit">
+                <i class="fas fa-arrow-alt-circle-right"></i>
+              </button>
+              <input
+                type="text"
+                name="busquedaNav"
+                id="busquedaNav"
+                placeholder="Buscar..."
+                maxlength="20"
+                minlength="3"
+              />
+              <label for="busquedaNav"><i class="fas fa-search"></i></label>
+            </form>
+          </li>
+          <li><i class="fas fa-shopping-cart"></i></li>
+          <!-- TODO:
+              ! Al apretar en carrito:
+              * mostrar side panel con los items que agrego al carrito
+            -->
+          <li><i class="fas fa-user"></i></li>
+          <!-- TODO:
+              ! Al apretar en usuario:
+              * redireccionar a la pagina de administrador
+            -->
+        </ul>
+      </div>
+    </nav>
+
+    <main>
+      <img src="./assets/images/banner samsung.png" alt="Banner de Samsung" />
+
+      <div class="contenedor-principal">
+        <section class="seccion-filtro">
+          <input type="checkbox" id="toggle-filtro" />
+          <label for="toggle-filtro">Filtros</label>
+
+          <form id="formulario-filtro">
+            <div class="grupo-formulario">
+              <label for="categoria">Categoría:</label>
+              <select id="categoria" name="category">
+                <option value="all">Todas</option>
+                <option value="electronics">Smartphone</option>
+                <option value="fashion">SmartWatch</option>
+                <option value="home">Tv</option>
+              </select>
+            </div>
+            <div class="grupo-formulario">
+              <label for="rango-precio">Precio:</label>
+              <div class="contenedor-rango-precio">
+                <output id="precio-min">Desde: $30</output>
+                <input
+                  type="range"
+                  id="rango-precio"
+                  name="price-range"
+                  min="0"
+                  max="1000"
+                  step="50"
+                  value="500"
+                />
+                <output id="precio-max">Hasta: $1000</output>
+              </div>
+            </div>
+            <div class="grupo-formulario">
+              <label>Modelo:</label>
+              <div class="grupo-checkbox">
+                <label>
+                  <input type="checkbox" name="rating" value="5" /> S23
+                </label>
+                <label>
+                  <input type="checkbox" name="rating" value="4" /> A54
+                </label>
+                <label>
+                  <input type="checkbox" name="rating" value="3" /> A04e
+                </label>
+                <label>
+                  <input type="checkbox" name="rating" value="2" /> Flip 5
+                </label>
+                <label>
+                  <input type="checkbox" name="rating" value="1" /> A14
+                </label>
+              </div>
+            </div>
+            <button type="submit" class="btn-filtro">Aplicar</button>
+          </form>
+        </section>
+
+        <section class="seccion_cards">
+          <div class="grid_card">
+            <img src="./assets/images/a52.png" alt="Samsung Galaxy A52" />
+            <h5>Galaxy A52</h5>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ullam
+              soluta doloribus asperiores maxime dicta ea.
+            </p>
+            <h4>$600</h4>
+            <a href="./producto.html"><button type="button">Comprar</button></a>
+          </div>
+
+          <div class="grid_card">
+            <img src="./assets/images/a52.png" alt="Samsung Galaxy A52" />
+            <h5>Galaxy A52</h5>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ullam
+              soluta doloribus asperiores maxime dicta ea.
+            </p>
+            <h4>$600</h4>
+            <a href="./producto.html"><button type="button">Comprar</button></a>
+          </div>
+
+          <div class="grid_card">
+            <img src="./assets/images/a52.png" alt="Samsung Galaxy A52" />
+            <h5>Galaxy A52</h5>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ullam
+              soluta doloribus asperiores maxime dicta ea.
+            </p>
+            <h4>$600</h4>
+            <a href="./producto.html"><button type="button">Comprar</button></a>
+          </div>
+
+          <div class="grid_card">
+            <img src="./assets/images/a52.png" alt="Samsung Galaxy A52" />
+            <h5>Galaxy A52</h5>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ullam
+              soluta doloribus asperiores maxime dicta ea.
+            </p>
+            <h4>$600</h4>
+            <a href="./producto.html"><button type="button">Comprar</button></a>
+          </div>
+
+          <div class="grid_card">
+            <img src="./assets/images/a52.png" alt="Samsung Galaxy A52" />
+            <h5>Galaxy A52</h5>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ullam
+              soluta doloribus asperiores maxime dicta ea.
+            </p>
+            <h4>$600</h4>
+            <a href="./producto.html"><button type="button">Comprar</button></a>
+          </div>
+
+          <div class="grid_card">
+            <img src="./assets/images/a52.png" alt="Samsung Galaxy A52" />
+            <h5>Galaxy A52</h5>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ullam
+              soluta doloribus asperiores maxime dicta ea.
+            </p>
+            <h4>$600</h4>
+            <a href="./producto.html"><button type="button">Comprar</button></a>
+          </div>
+
+          <div class="grid_card">
+            <img src="./assets/images/a52.png" alt="Samsung Galaxy A52" />
+            <h5>Galaxy A52</h5>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ullam
+              soluta doloribus asperiores maxime dicta ea.
+            </p>
+            <h4>$600</h4>
+            <a href="./producto.html"><button type="button">Comprar</button></a>
+          </div>
+
+          <div class="grid_card">
+            <img src="./assets/images/a52.png" alt="Samsung Galaxy A52" />
+            <h5>Galaxy A52</h5>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ullam
+              soluta doloribus asperiores maxime dicta ea.
+            </p>
+            <h4>$600</h4>
+            <a href="./producto.html"><button type="button">Comprar</button></a>
+          </div>
+
+          <div class="grid_card">
+            <img src="./assets/images/a52.png" alt="Samsung Galaxy A52" />
+            <h5>Galaxy A52</h5>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ullam
+              soluta doloribus asperiores maxime dicta ea.
+            </p>
+            <h4>$600</h4>
+            <a href="./producto.html"><button type="button">Comprar</button></a>
+          </div>
+
+          <div class="grid_card">
+            <img src="./assets/images/a52.png" alt="Samsung Galaxy A52" />
+            <h5>Galaxy A52</h5>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ullam
+              soluta doloribus asperiores maxime dicta ea.
+            </p>
+            <h4>$600</h4>
+            <a href="./producto.html"><button type="button">Comprar</button></a>
+          </div>
+
+          <div class="grid_card">
+            <img src="./assets/images/a52.png" alt="Samsung Galaxy A52" />
+            <h5>Galaxy A52</h5>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ullam
+              soluta doloribus asperiores maxime dicta ea.
+            </p>
+            <h4>$600</h4>
+            <a href="./producto.html"><button type="button">Comprar</button></a>
+          </div>
+
+          <div class="grid_card">
+            <img src="./assets/images/a52.png" alt="Samsung Galaxy A52" />
+            <h5>Galaxy A52</h5>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ullam
+              soluta doloribus asperiores maxime dicta ea.
+            </p>
+            <h4>$600</h4>
+            <a href="./producto.html"><button type="button">Comprar</button></a>
+          </div>
+
+          <div class="grid_card">
+            <img src="./assets/images/a52.png" alt="Samsung Galaxy A52" />
+            <h5>Galaxy A52</h5>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ullam
+              soluta doloribus asperiores maxime dicta ea.
+            </p>
+            <h4>$600</h4>
+            <a href="./producto.html"><button type="button">Comprar</button></a>
+          </div>
+
+          <div class="grid_card">
+            <img src="./assets/images/a52.png" alt="Samsung Galaxy A52" />
+            <h5>Galaxy A52</h5>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ullam
+              soluta doloribus asperiores maxime dicta ea.
+            </p>
+            <h4>$600</h4>
+            <a href="./producto.html"><button type="button">Comprar</button></a>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <footer>
+      <section class="footer_cabecera">
+        <div>
+          <a href="./index.html"
+            ><img src="./assets/images/logo dm.png" alt="Logo Digital Market"
+          /></a>
+        </div>
+        <div class="footer_social">
+          <ul>
+            <li>
+              <a
+                href="https://www.instagram.com/digitalmarketxxi"
+                target="_blank"
+                ><i class="fa-brands fa-instagram"></i> digitalmarketxxi
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.facebook.com/digitalmarketxxi"
+                target="_blank"
+                ><i class="fa-brands fa-facebook"></i> digitalmarketxxi
+              </a>
+            </li>
+            <li>
+              <a href="https://wa.link/0r3gmg" target="whatsapp"
+                ><i class="fa-brands fa-whatsapp"></i> +543417470919
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer_suscripcion">
+          <form action="#" method="POST">
+            <label for="footer_email">Recibí ofertas y promociones</label>
+            <div>
+              <input
+                type="email"
+                name="email"
+                id="footer_email"
+                placeholder="Ingresá tu email"
+                required
+              />
+              <button type="submit">
+                <i class="fa-solid fa-share-from-square"></i>
+              </button>
+            </div>
+          </form>
+        </div>
+      </section>
+
+      <hr />
+
+      <section class="footer_informacion">
+        <div>
+          <h4>Horarios de atención</h4>
+          <p>
+            Lunes a Viernes de 9 a 17hs<br />Sábados de 10 a 12hs<br /><a
+              href="mailto:dmrosario1045@gmail.com"
+              >dmrosario1045@gmail.com</a
+            >
+          </p>
+        </div>
+        <div>
+          <h4>Comprar en Digital Market</h4>
+          <ul>
+            <li><a href="#">Servicio técnico</a></li>
+            <li><a href="#">Política de privacidad</a></li>
+            <li><a href="#">Botón de arrepentimiento</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Recomendados</h4>
+          <ul>
+            <li><a href="#">Samsung</a></li>
+            <li><a href="#">iPhone</a></li>
+            <li><a href="#">Motorola</a></li>
+            <li><a href="#">Xiaomi</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Ayuda</h4>
+          <ul>
+            <li><a href="#">Contactanos</a></li>
+            <li><a href="#">Dirección de showroom</a></li>
+            <li><a href="#">Vendé en Digital Market</a></li>
+            <li><a href="#">Trabajá con nosotros</a></li>
+          </ul>
+        </div>
+      </section>
+    </footer>
+
+    <script src="./static/scripts/script.js"></script>
+  </body>
+</html>

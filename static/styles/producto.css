@@ -1,0 +1,634 @@
+body {
+	background-color: #000;
+	font-family: "Montserrat", sans-serif;
+  overflow-x: hidden;
+}
+
+nav {
+	width: 100vw;
+	background-color: #000;
+	color: #fff;
+	display: grid;
+	grid-template-columns: 100px calc(100% - 200px - 100px) 200px;
+	justify-content: space-between;
+	box-sizing: border-box;
+	padding: 0 20px;
+	height: 100px;
+	font-family: "Montserrat", sans-serif;
+}
+
+nav div ul {
+	padding: 0;
+	margin: 0;
+	height: 100px;
+	text-align: center;
+}
+
+nav div img {
+	width: 90px;
+	height: 70px;
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+nav div ul li {
+	display: inline-block;
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+nav div ul li a {
+	text-decoration: none;
+	font-size: 14px;
+	color: #fff;
+	padding: 5px 30px;
+	text-transform: uppercase;
+  transition: color 0.3s ease;
+}
+
+nav div ul li a:hover {
+  color: #00add5;
+}
+
+nav div ul li i {
+	font-size: 24px;
+	color: #fff;
+	text-decoration: none;
+	margin: 5px 15px;
+  transition: color 0.3s ease, transform 0.5s ease;
+}
+
+nav div ul li i:hover {
+  color: #00add5;
+  cursor: pointer;
+}
+
+#listBusquedaNav input {
+	width: 100%;
+	height: 32px;
+	box-sizing: border-box;
+	padding: 5px;
+	font-size: 16px;
+	display: none;
+	font-family: inter, sans-serif;
+  transition: opacity 1s ease;
+  opacity: 0;
+}
+
+#listBusquedaNav label {
+	cursor: pointer;
+}
+
+#listBusquedaNav button {
+	width: 24px;
+	height: 24px;
+	cursor: pointer;
+	position: absolute;
+	right: 10px;
+	top: 2px;
+	background: none;
+	border: none;
+	display: none;
+  z-index: 2;
+  transition: opacity 1.5s ease;
+  opacity: 0;
+}
+
+#listBusquedaNav button i {
+	margin: 0;
+	background-color: #000;
+	border: 1px solid #000;
+	border-radius: 15px;
+}
+
+
+
+.contenedor_card {
+	position: relative;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 95vw;
+	height: 700px;
+	background-color: #fff;
+	border-radius: 15px;
+	padding: 30px;
+	box-sizing: border-box;
+}
+
+.producto_card {
+	position: relative;
+	left: 50%;
+	transform: translateX(-50%);
+	max-width: 1200px;
+}
+
+.producto_card_izquierda {
+	float: left;
+  display: grid;
+  grid-template-columns: 70px calc(100% - 70px);
+}
+
+.producto_card_izquierda .card_imagenes {
+	width: 70px;
+	height: 600px;
+	display: inline-block;
+}
+
+.card_imagenes img {
+	width: 60px;
+	height: 90px;
+	margin: 14px 0;
+}
+
+.producto_card_izquierda .card_imagen_principal {
+	margin: 0 30px;
+	width: 500px;
+	height: 600px;
+	display: inline-block;
+	position: relative;
+}
+
+
+.card_imagen_principal > button {
+	position: absolute;
+	top: 45%;
+	transform: translateY(-50%);
+	background-color: transparent;
+	border: none;
+	width: 40px;
+	height: 100px;
+}
+
+.card_imagen_principal > button:hover {
+	background-color: #ccc;
+	cursor: pointer;
+}
+
+.card_imagen_principal > button:active {
+	background-color: #a5a5a5;
+	cursor: pointer;
+}
+
+.card_imagen_principal .card_flecha_derecha {
+	right: 0;
+}
+
+.card_imagen_principal img {
+	position: relative;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 400px;
+	height: 550px;
+}
+
+.card_imagen_principal .card_botones_abajo {
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	margin-top: 10px;
+}
+
+.card_botones_abajo button {
+	width: 15px;
+	height: 15px;
+	border-radius: 50%;
+	border: none;
+	margin: 0 5px;
+}
+
+.card_botones_abajo button:first-child {
+	background-color: #686868;
+}
+
+.card_botones_abajo button:hover {
+	cursor: pointer;
+}
+
+.producto_card_derecha {
+	float: right;
+}
+
+.producto_card_derecha h1 {
+	font-size: 40px;
+	text-transform: uppercase;
+}
+
+.producto_card_derecha p {
+	font-size: 20px;
+}
+
+.producto_card_derecha a {
+	display: inline-block;
+	margin-top: 30px;
+}
+
+.producto_card_derecha .producto_mediosdepago img {
+	width: 60px;
+	height: 40px;
+	margin: 0 10px;
+}
+
+.producto_card_derecha a {
+	font-size: 20px;
+	text-decoration: none;
+}
+
+.producto_card_derecha .producto_costo {
+	font-size: 64px;
+}
+
+.producto_card_derecha .producto_cuotas {
+	font-size: 24px;
+	color: #00ADD5;
+}
+
+.producto_card_derecha button {
+	background-color: #00ADD5;
+	border-radius: 4px;
+	cursor: pointer;
+	color: #fff;
+	text-transform: uppercase;
+	border: none;
+	width: 300px;
+	height: 70px;
+	font-weight: 700;
+	font-size: 30px;
+}
+
+.contenedor_caracteristicas {
+	color: #fff;
+	position: relative;
+  margin-top: 50px;
+  text-align: center;
+}
+
+.contenedor_caracteristicas h2 {
+  margin-bottom: 30px;
+  font-size: 44px;
+  text-transform: uppercase;
+}
+
+.contenedor_caracteristicas table {
+	background-color: rgba(255, 255, 255, 0.17);
+	margin: 0 auto;
+	border-collapse: separate;
+	border-spacing: 0;
+	border: 1px solid #fff;
+	border-radius: 20px;
+	max-width: 1100px;
+	overflow: hidden;
+}
+
+.contenedor_caracteristicas table tbody td {
+	border-bottom: 1px solid #fff;
+	padding: 50px;
+	text-align: left;
+}
+
+.contenedor_caracteristicas table tbody td:nth-child(1) {
+    width: 40%;
+	text-align: center;
+	font-size: 32px;
+}
+
+.contenedor_caracteristicas table tbody td:nth-child(2) {
+    width: 60%;
+	font-size: 20px;
+}
+
+
+
+main .carousel {
+	position: relative;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 90vw;
+	height: 650px;
+	padding: 50px 30px 0;
+	box-sizing: content-box;
+}
+
+.owl-carousel, .owl-stage {
+	height: 500px;
+	margin: 0 auto;
+	width: 100%;
+}
+
+.carousel h2 {
+	text-align: center;
+	font-size: 44px;
+	text-transform: uppercase;
+	color: #fff;
+	margin-bottom: 60px;
+}
+
+  .carousel .carousel_card {
+	width: 100%;
+	min-width: 280px;
+	max-width: 300px;
+	height: 470px;
+	background-color: #fff;
+	padding: 20px;
+	border-radius: 14px;
+	position: relative;
+	left: 50%;
+	transform: translateX(-50%);
+  }
+
+  .carousel_card img {
+	height: 230px;
+	width: 80%;
+	margin-bottom: 15px;
+  }
+
+  .carousel_card h4 {
+	font-weight: 700;
+	font-size: 24px;
+	text-align: center;
+	margin-bottom: 12px;
+  }
+
+  .carousel_card h5 {
+	font-size: 18px;
+	font-weight: 700;
+  }
+
+  .carousel_card p {
+	overflow: hidden;
+	height: 66px;
+	font-size: 16px;
+	margin-bottom: 10px;
+  }
+
+  .carousel_card button {
+	width: 100%;
+	padding: 10px;
+	text-transform: uppercase;
+	background-color: transparent;
+	border: 1px solid #00add5;
+	color: #00add5;
+	border-radius: 32px;
+	font-weight: 700;
+	transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+
+  .carousel_card button:hover {
+	color: #fff;
+	background-color: #00add5;
+	transform: scale(1.1);
+  }
+
+
+
+  footer {
+    font-family: "Montserrat", sans-serif;
+    background-color: #000000;
+    color: #ffffff;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 40px;
+    margin-top: 40px;
+    width: 95vw;
+    border-top: 5px solid #fff;
+  }
+
+  footer ul {
+    list-style-type: none;
+    padding-left: 0;
+  }
+
+  footer a {
+    color: #ffffff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+
+  footer a:hover {
+    color: #00add5;
+  }
+
+  footer .footer_cabecera {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    max-width: 1400px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .footer_cabecera img {
+    width: 150px;
+    height: 120px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .footer_social li {
+    padding: 5px;
+    font-size: 18px;
+    text-align: center;
+  }
+
+  .footer_social li:last-child {
+    margin-right: 15px;
+  }
+
+  .footer_social li i {
+    font-size: 22px;
+    margin-right: 5px;
+  }
+
+  .footer_suscripcion {
+    position: relative;
+    text-align: center;
+  }
+
+  .footer_suscripcion label {
+    font-size: 18px;
+    display: block;
+    margin: 10px 0;
+  }
+
+  .footer_suscripcion div {
+    position: relative;
+    width: 270px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .footer_suscripcion div input {
+    position: relative;
+    font-size: 18px;
+    width: 245px;
+    height: 40px;
+    padding: 10px;
+    margin-right: 15px;
+    border-radius: 5px;
+    border: none;
+  }
+
+  .footer_suscripcion div button {
+    position: absolute;
+    top: 0;
+    right: -10px;
+    background-color: #fff;
+    color: #00add5;
+    border: none;
+    transition: color 0.3s ease;
+    width: 35px;
+    height: 40px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+  }
+
+  /* don't ask, just praise chatgpt */
+  .footer_suscripcion div input:focus, .footer_suscripcion div input:focus + button {
+    outline: none;
+    border-bottom: 2px solid #00add5;
+    border-top: 2px solid #00add5;
+  }
+
+  .footer_suscripcion div button:hover {
+    color: #007a99;
+  }
+
+  .footer_informacion {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    font-size: 18px;
+    margin-top: 30px;
+    max-width: 1400px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .footer_informacion div h4 {
+    color: #00add5;
+    font-weight: 700;
+    font-size: 22px;
+  }
+
+  .footer_informacion div ul li {
+    text-decoration: underline;
+    color: #007a99;
+  }
+
+
+
+
+/* ! Estas MQ para hacer la nav responsiva son temporales
+  * Cuando obtengamos las categorias del backend se va a calcular
+  * cuantas entran en el ancho de la pantalla y va haber un listener
+  * para el evento de resize
+*/
+@media screen and (max-width: 1600px) {
+  .categoriasNav ul li:nth-child(1) {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1460px) {
+  .categoriasNav ul li:nth-child(2) {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  .categoriasNav ul li:nth-child(3) {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .categoriasNav ul li:nth-child(4) {
+    display: none;
+  }
+
+  .categoriasNav ul li a {
+    padding: 5px 10px;
+  }
+
+  .footer_informacion {
+    grid-template-columns: auto auto;
+  }
+}
+
+@media screen and (max-width: 780px) {
+  .categoriasNav ul li:nth-child(5) {
+    display: none;
+  }
+
+  footer .footer_cabecera {
+    grid-template-columns: auto auto;
+  }
+
+  .footer_cabecera div:first-child {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 670px) {
+  .categoriasNav ul li:nth-child(6) {
+    display: none;
+  }
+
+  .categoriasNav ul li a {
+    padding: 5px 5px;
+  }
+
+  .footer_informacion {
+    display: block;
+  }
+
+  .footer_informacion div {
+    width: 50%;
+    display: inline-block;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 15px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  footer .footer_cabecera {
+    display: block;
+  }
+  .footer_suscripcion {
+    margin-top: 20px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .categoriasNav ul li:nth-child(7) {
+    display: none;
+  }
+
+  nav {
+	  grid-template-columns: 50px calc(100% - 200px - 100px) 130px;
+  }
+
+  nav div ul li i {
+    margin: 5px 5px;
+  }
+
+  .footer_informacion div {
+    width: 100%;
+  }
+}
+
+
+
+
+
+
+
+

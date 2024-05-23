@@ -1,0 +1,565 @@
+body {
+  background-color: #000000;
+  font-family: "Montserrat", sans-serif;
+  margin: 200;
+  padding: 200;
+}
+
+nav {
+	width: 100vw;
+	background-color: #000;
+	color: #fff;
+	display: grid;
+	grid-template-columns: 100px calc(100% - 200px - 100px) 200px;
+	justify-content: space-between;
+	box-sizing: border-box;
+	padding: 0 20px;
+	height: 100px;
+	font-family: "Montserrat", sans-serif;
+}
+
+nav div ul {
+	padding: 0;
+	margin: 0;
+	height: 100px;
+	text-align: center;
+}
+
+nav div img {
+	width: 90px;
+	height: 70px;
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+nav div ul li {
+	display: inline-block;
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+nav div ul li a {
+	text-decoration: none;
+	font-size: 14px;
+	color: #fff;
+	padding: 5px 30px;
+	text-transform: uppercase;
+  transition: color 0.3s ease;
+}
+
+nav div ul li a:hover {
+  color: #00add5;
+}
+
+nav div ul li i {
+	font-size: 24px;
+	color: #fff;
+	text-decoration: none;
+	margin: 5px 15px;
+  transition: color 0.3s ease, transform 0.5s ease;
+}
+
+nav div ul li i:hover {
+  color: #00add5;
+  cursor: pointer;
+}
+
+#listBusquedaNav input {
+	width: 100%;
+	height: 32px;
+	box-sizing: border-box;
+	padding: 5px;
+	font-size: 16px;
+	display: none;
+	font-family: inter, sans-serif;
+  transition: opacity 1s ease;
+  opacity: 0;
+}
+
+#listBusquedaNav label {
+	cursor: pointer;
+}
+
+#listBusquedaNav button {
+	width: 24px;
+	height: 24px;
+	cursor: pointer;
+	position: absolute;
+	right: 10px;
+	top: 2px;
+	background: none;
+	border: none;
+	display: none;
+  z-index: 2;
+  transition: opacity 1.5s ease;
+  opacity: 0;
+}
+
+#listBusquedaNav button i {
+	margin: 0;
+	background-color: #000;
+	border: 1px solid #000;
+	border-radius: 15px;
+}
+
+
+
+main > img {
+  width: 100%;
+  max-width: 2048px;
+  max-height: 300px;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+
+.contenedor-principal {
+  display: grid;
+  grid-template-columns: 300px auto;
+  padding: 20px;
+  gap: 20px;
+}
+
+/* estilo para el filtro */
+.seccion-filtro {
+  background-color: #282828;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#toggle-filtro {
+  display: none;
+
+}
+
+.seccion-filtro label[for="toggle-filtro"]{
+  font-size: large;
+
+}
+
+.seccion-filtro label {
+  font-weight: bold;
+  color: white;
+  padding-top: 10px;
+
+}
+
+.seccion-filtro h2 {
+  margin-bottom: 15px;
+  color: #ffffff;
+}
+
+.grupo-formulario {
+  margin-bottom: 15px;
+}
+
+#formulario-filtro {
+  max-height: none;
+  overflow: visible;
+  transition: none;
+}
+
+.grupo-formulario label {
+  display: block;
+  margin-bottom: 5px;
+  color: #ffffff;
+}
+
+.grupo-formulario select,
+.grupo-formulario input[type="range"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.contenedor-rango-precio {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.contenedor-rango-precio output {
+  font-size: 14px;
+  color: #ffffff;
+}
+
+.grupo-checkbox {
+  display: flex;
+  flex-direction: column;
+}
+
+.grupo-checkbox label {
+  font-weight: 100;
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+  color: #ffffff;
+}
+
+.grupo-checkbox input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+.btn-filtro {
+  background-color: #00add5;
+  color: #fff;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-filtro:hover {
+  background-color: #008bb5;
+}
+
+
+
+.seccion_cards {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 20px;
+  text-align: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.seccion_cards .grid_card {
+  width: 100%;
+  min-width: 280px;
+  max-width: 300px;
+  height: 470px;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 14px;
+}
+
+.grid_card img {
+  height: 230px;
+  width: 80%;
+  margin-bottom: 15px;
+}
+
+.grid_card h4 {
+  font-weight: 700;
+  font-size: 24px;
+  text-align: center;
+  margin-bottom: 12px;
+}
+
+.grid_card h5 {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.grid_card p {
+  overflow: hidden;
+  height: 66px;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.grid_card button {
+  width: 100%;
+  padding: 10px;
+  text-transform: uppercase;
+  background-color: transparent;
+  border: 1px solid #00add5;
+  color: #00add5;
+  border-radius: 32px;
+  font-weight: 700;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.grid_card button:hover {
+  color: #fff;
+  background-color: #00add5;
+  transform: scale(1.1);
+}
+
+
+
+footer {
+  font-family: "Montserrat", sans-serif;
+  background-color: #000000;
+  color: #ffffff;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 40px;
+  margin-top: 40px;
+  width: 95vw;
+  border-top: 5px solid #fff;
+}
+
+footer ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+footer a {
+  color: #ffffff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+footer a:hover {
+  color: #00add5;
+}
+
+footer .footer_cabecera {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  max-width: 1400px;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.footer_cabecera img {
+  width: 150px;
+  height: 120px;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.footer_social li {
+  padding: 5px;
+  font-size: 18px;
+  text-align: center;
+}
+
+.footer_social li:last-child {
+  margin-right: 15px;
+}
+
+.footer_social li i {
+  font-size: 22px;
+  margin-right: 5px;
+}
+
+.footer_suscripcion {
+  position: relative;
+  text-align: center;
+}
+
+.footer_suscripcion label {
+  font-size: 18px;
+  display: block;
+  margin: 10px 0;
+}
+
+.footer_suscripcion div {
+  position: relative;
+  width: 270px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.footer_suscripcion div input {
+  position: relative;
+  font-size: 18px;
+  width: 245px;
+  height: 40px;
+  padding: 10px;
+  margin-right: 15px;
+  border-radius: 5px;
+  border: none;
+}
+
+.footer_suscripcion div button {
+  position: absolute;
+  top: 0;
+  right: -10px;
+  background-color: #fff;
+  color: #00add5;
+  border: none;
+  transition: color 0.3s ease;
+  width: 35px;
+  height: 40px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+/* don't ask, just praise chatgpt */
+.footer_suscripcion div input:focus, .footer_suscripcion div input:focus + button {
+  outline: none;
+  border-bottom: 2px solid #00add5;
+  border-top: 2px solid #00add5;
+}
+
+.footer_suscripcion div button:hover {
+  color: #007a99;
+}
+
+.footer_informacion {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  font-size: 18px;
+  margin-top: 30px;
+  max-width: 1400px;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.footer_informacion div h4 {
+  color: #00add5;
+  font-weight: 700;
+  font-size: 22px;
+}
+
+.footer_informacion div ul li {
+  text-decoration: underline;
+  color: #007a99;
+}
+
+
+/* ! Estas MQ para hacer la nav responsiva son temporales
+  * Cuando obtengamos las categorias del backend se va a calcular
+  * cuantas entran en el ancho de la pantalla y va haber un listener
+  * para el evento de resize
+*/
+@media screen and (max-width: 1600px) {
+  .categoriasNav ul li:nth-child(1) {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1460px) {
+  .categoriasNav ul li:nth-child(2) {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  .categoriasNav ul li:nth-child(3) {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .categoriasNav ul li:nth-child(4) {
+    display: none;
+  }
+
+  .categoriasNav ul li a {
+    padding: 5px 10px;
+  }
+
+  .footer_informacion {
+    grid-template-columns: auto auto;
+  }
+}
+
+@media (max-width: 1024px) {
+  .contenedor-principal {
+    grid-template-columns: 1fr;
+  }
+
+  #formulario-filtro {
+    max-height: none;
+    overflow: visible;
+    transition: none;
+  }
+}
+
+@media screen and (max-width: 780px) {
+  .categoriasNav ul li:nth-child(5) {
+    display: none;
+  }
+
+  .seccion-filtro {
+    display: block;
+  }
+
+  .seccion-filtro h2{
+    display: none;
+  }
+
+  #toggle-filtro {
+    display: inline-block;
+  }
+
+  #formulario-filtro {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+  }
+
+  #toggle-filtro:checked ~ #formulario-filtro {
+    max-height: 1000px;
+  }
+
+  footer .footer_cabecera {
+    grid-template-columns: auto auto;
+  }
+
+  .footer_cabecera div:first-child {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 670px) {
+  .categoriasNav ul li:nth-child(6) {
+    display: none;
+  }
+
+  .categoriasNav ul li a {
+    padding: 5px 5px;
+  }
+
+  .footer_informacion {
+    display: block;
+  }
+
+  .footer_informacion div {
+    width: 50%;
+    display: inline-block;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 15px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  footer .footer_cabecera {
+    display: block;
+  }
+  .footer_suscripcion {
+    margin-top: 20px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .categoriasNav ul li:nth-child(7) {
+    display: none;
+  }
+
+  nav {
+	  grid-template-columns: 50px calc(100% - 200px - 100px) 130px;
+  }
+
+  nav div ul li i {
+    margin: 5px 5px;
+  }
+
+  .footer_informacion div {
+    width: 100%;
+  }
+}
+
+
