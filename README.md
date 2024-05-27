@@ -2,8 +2,6 @@
 
 Es una aplicación web de e-commerce diseñada para la empresa "Digital Market" que se especializa en ventas de productos tecnologicos. Este proyecto actualmente está en desarrollo y solo cuenta con el [Front End](https://tamii01.github.io/DigitalMarket-CaC). La plataforma tiene como objetivo proporcionar una experiencia de usuario fluida y atractiva, permitiendo a los clientes navegar, buscar y comprar de manera eficiente y segura. El diseño se centra en la usabilidad y accesibilidad, asegurando que los usuarios puedan encontrar fácilmente lo que buscan y realicen sus compras con confianza.
 
-Ver demo online en **github pages**: https://tamii01.github.io/DigitalMarket-CaC/
-
 ## Equipo de Desarrollo
 
 - **Lautaro Colella** [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=flat&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/lautaro-colella/)
